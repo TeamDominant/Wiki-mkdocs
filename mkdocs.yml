@@ -1,42 +1,44 @@
 site_name: TeamDominant Wiki
+site_description: Wiki and answers for most questions
+site_url: https://wiki.amdcloud.kz
+edit_uri: ""
+repo_url: https://github.com/TeamDominant/Wiki
 theme:
-  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
-
-plugins:
-  - social
-  - search
-
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/prettyleaf
-    - icon: fontawesome/brands/twitch
-      link: https://twitch.com/pr3ttyleaf
-
+  name: material
+  custom_dir: overrides
+  favicon: images/logo.svg
+  logo: images/logo.svg
+  font:
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -50,9 +52,37 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - mdx_truly_sane_lists
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+      enable_creation_date: true
+      enabled: true
 
-copyright: |
-  &copy; 2024 <a href="https://github.com/prettyleaf"  target="_blank" rel="noopener">John Leaf</a>
+extra:
+  social:
+    - icon: fontawesome/solid/rss 
+      link: /feed_rss_created.xml
+  homepage: https://wiki.amdcloud.kz
+
+nav:
+  - Home: 
+    - Start Page: index.md
+    - Getting Started: gettingstarted.md
+  - Software:
+    - Discord: discord.md
+    - Firefox: firefox.md
+    - Telegram: telegram.md
+  - Network:
+    - 3x-ui: 3x-ui.md
+    - Nekoray: nekoray.md
+    - Streisand: streisand.md
+  - Server:
+    - Nextcloud: nextcloud.md
+    - SWAG: secure.md
+    - Geoblock: geoblock.md
+    - Jfscan: jfscan.md
+  - Other:
+    - iPhone: iphone.md

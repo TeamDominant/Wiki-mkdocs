@@ -1,17 +1,26 @@
-# Welcome to MkDocs
+# Welcome to TeamDominant wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+> Little disclaimer. Some information was copied from [virtualize.link](https://virtualize.link/), because I find information provided by its author useful. Make sure to check the [source](https://github.com/quietsy/advanced-configurations) or star the repo.
 
-## Commands
+## Software
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Discord](discord)
+- [Firefox](firefox)
+- [Telegram](telegram)
 
-## Project layout
+## Network
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [3x-ui](3x-ui)
+- [Nekoray](nekoray)
+- [Streisand](streisand)
+
+## Server
+
+- [Nextcloud](nextcloud)
+- [SWAG](secure)
+- [Geoblock](geoblock)
+- [Jfscan](jfscan)
+
+## Other
+
+- [iPhone](iphone)
