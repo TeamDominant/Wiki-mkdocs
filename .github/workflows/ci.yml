@@ -2,8 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - master 
-      - main
+      - master
 permissions:
   contents: write
 jobs:
@@ -22,3 +21,6 @@ jobs:
       - run: pip install pillow cairosvg
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
+        env:
+          CUSTOM_DOMAIN: wiki.amdcloud.kz
+        
