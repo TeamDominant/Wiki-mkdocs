@@ -23,4 +23,3 @@ jobs:
       - run: mkdocs gh-deploy --force
         env:
           CUSTOM_DOMAIN: wiki.amdcloud.kz
-        
