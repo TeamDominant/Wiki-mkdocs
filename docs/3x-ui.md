@@ -10,7 +10,7 @@ The setup was used in my case:
 
 ## Installation
 
-Как только попадаем в систему после покупки VPS, выполняем следующие команды:
+As soon as we log into the system after purchasing a VPS, we execute the following commands:
 
 1. 
 ```bash
