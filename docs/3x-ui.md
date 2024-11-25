@@ -22,8 +22,8 @@ to install all updates
 ```bash 
 openssl req -x509 -keyout /etc/ssl/certs/3x-ui.key -out /etc/ssl/certs/3x-ui.pem -newkey rsa:4096 -sha256 -days 3650 -nodes -new
 ```
-где .pem - публичный ключ, а .key - приватный.  
-Просто спамим enter, ничего заполнять не нужно.
+where .pem is the public key, and .key is the private key.
+Just keep pressing Enter, no need to fill anything in.
 
 3. 
 ```bash
@@ -34,11 +34,11 @@ to install the panel itself
 ## Setting up
 
 1. `Would you like to customize the Panel Port settings? (If not, a random port will be applied)`
-отвечаем "n".
+we answer "n".
 
-2. Нажимаем на ссылку в строке Access URL, чтобы попасть в нашу панель. Вводим данные, которые нам были сгенерированы после установки.
+2. Click on the link in the "Access URL" line to access our panel. Enter the credentials generated for us after the installation.
 
-3. Заходим в Panel Settings и после в раздел Authentication, меняем данные для входа. В разделе General указываем путь к уже созданным Public & Private ключам: /etc/ssl/certs/3x-ui.pem и /etc/ssl/certs/3x-ui.key, листаем вверх и жмём Save и Restart panel.
+3.Go to Panel Settings, then to the Authentication section, and change the login details. In the General section, specify the path to the already created Public & Private keys: /etc/ssl/certs/3x-ui.pem and /etc/ssl/certs/3x-ui.key. Scroll up, click Save, and restart the panel.
 
 ## Inbound creation
 
@@ -48,16 +48,18 @@ to install the panel itself
 - Email = `email` or `username`
 - Security: `Reality`
 - uTLS: `chrome/firefox`
-- Dest и SNI: подбираем сайт, с минимальным пингом, в стране, где Ваш VPS. Проверить можно вводом в терминал VPS: `ping domain.com`. Можете уточнить в поддержке VPS или просто спросить ChatGPT.
+- Dest и SNI: choose a website with the lowest ping in the country where your VPS is located. You can check it by running the following command in your VPS terminal: ping domain.com. You can ask your VPS support for assistance or simply ask ChatGPT.
 
-Если у вас занят 443 порт, то:
+If port 443 is occupied, then:
 
-- Port: пользовательский или по умолчанию
-- uTLS: chrome/firefox/random  
-  You are supposed to test it youself, because it works differently on each VPS, IPS and even OS. 
-- Dest and SNI: you also need to also check it yourself
+- Port: custom or default
+- uTLS: chrome/firefox/random
+You are supposed to test it yourself because it works differently on each VPS, ISP, and even OS.
+- Dest and SNI: you also need to test these yourself.
 
-Нажимаем на иконку QR-code возле создавшегося клиента, кликаем по QR-code, чтобы скопировать в буфер обмена и вставляем в Nekoray/Streisand.
+Click on the QR code icon next to the created client, then click the QR code to copy it to the clipboard, and paste it into Nekoray/Streisand.
+
+Click on the QR code icon next to the created client, then click on the QR code to copy it to the clipboard and paste it into Nekoray/Streisand.
 
 ## Securing and little tweaks
 ### Fail2ban
