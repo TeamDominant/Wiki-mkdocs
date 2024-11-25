@@ -24,3 +24,4 @@
 ## Other
 
 - [iPhone](iphone)
+- [Nothing Phone](Nothing) 
