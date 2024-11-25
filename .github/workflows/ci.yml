@@ -21,5 +21,3 @@ jobs:
       - run: pip install pillow cairosvg
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
-        env:
-          CUSTOM_DOMAIN: wiki.amdcloud.kz
