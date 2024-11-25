@@ -68,8 +68,8 @@ Click on the QR code icon next to the created client, then click on the QR code 
 apt install fail2ban -y && apt install ufw -y
 ```
 
-После `touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local`
-Копируем и вставляем (ctrl + shift + v):
+After runnig `touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local`
+Copy and paste (ctrl + shift + v):
 
 ```nginx
 [sshd]
@@ -82,7 +82,7 @@ maxretry = 3
 bantime = 43200
 ```
 
-ctrl + x, y и enter, чтобы сохранить и выйти.
+Press ctrl + x, then y, and hit enter to save and exit.
 
 ### Ufw
 
@@ -90,7 +90,7 @@ ctrl + x, y и enter, чтобы сохранить и выйти.
 ```bash
 nano /etc/ufw/before.rules
 ```
-ищем `-A ufw-before-input -p icmp --icmp-type echo-request -j ACCEPT` и меняем `ACCEPT` на `DROP`
+Look `-A ufw-before-input -p icmp --icmp-type echo-request -j ACCEPT` and change `ACCEPT` to `DROP`
 
 2. 
 ```bash
@@ -99,31 +99,31 @@ apt install net-tools
 ```bash
 netstat -ntlp | grep LISTEN
 ```
-Открываем порты, которые нам нужны (ssh, 3x-ui, 443 и остальные, если у Вас что-то еще помимо этого)
+Open the ports you need (SSH, 3x-ui, 443, and any others if you have additional services).
 ```bash
 ufw allow 22/tcp && ufw allow 443 && ufw allow {panel_port} && ufw enable
 ```
-ctrl + x, y и enter.
+ctrl + x, y and enter.
 
-3. В терминале вводим 
+3. In the terminal, type 
 ```bash
 x-ui
 ```
 
-4. вводим 20 (IP Limit Management) и enter. После нажимаем 1 для установки и вводим y. 
+4. Type 20 (IP Limit Management) and press Enter. Then press 1 to install and type y.
 
 ### BBR
 
-1. В терминале вводим 
+1. In the terminal, type
 ```bash
 x-ui
 ```
 
-2. вводим 23 (Enable BBR) и выбираем 1 (Enable BBR).
+2. Type 23 (Enable BBR) and select 1 (Enable BBR).
 
 ## Final
 
-Напоследок подчищаем, ребут и можем пользоваться.
+Finally, clean up, reboot, and you're ready to use it.
 ```bash
 apt update && apt upgrade -y && apt autoclean -y && apt clean -y && apt autoremove -y && reboot
 ```
