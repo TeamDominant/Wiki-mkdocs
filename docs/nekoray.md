@@ -7,7 +7,7 @@ Before we begin, note that there are two installation options depending on your 
 
 This is because in version ***3.26***, the "Whitelist Mode" in Tun Mode settings does not work. As a result, you won’t be able to proxy only specific applications.
 
-## 1. Install 
+## *1. Install* 
 
 Installing and Configuring Nekoray
 
@@ -37,7 +37,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 - [Download 1.3.2 arm64-v8a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-arm64-v8a.apk)  
 - [Download 1.3.2 armeabi-v7a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-armeabi-v7a.apk)  
 
-## 2. Installing Nekoray on Windows
+## *2. Installing Nekoray on Windows*
 
 Next, we will look at the installation process for Nekoray on Windows. Some steps may vary depending on the system, but the overall process remains the same.
 
@@ -57,11 +57,17 @@ Step 3: Launching the Program
 
 The program works out of the box. No installation is required.
 
-## 3. Initial Setup of Nekoray
+## *3. Initial Setup of Nekoray*
 
 1. Core Selection:
 
-When you launch the program for the first time, make sure to select the **sing-box** core. This is necessary for proper functionality.
+When you launch the program for the first time, make sure to select the **sing-box** core. 
+
+
+![Nekorayselectcore](images/nekoray/nekoraycore1.png)
+
+
+This is necessary for proper functionality.
 If you were not given this choice or selected something other than sing-box, you can check or change it in the settings:
 
 - Click on **Settings**
@@ -76,6 +82,9 @@ If you were not given this choice or selected something other than sing-box, you
 - Click on the **Server** button.  
 - Select the option **Add Profile from Clipboard**.
 
+![AddProfileNekoray](images/nekoray/nekorayprofile.png)
+
+
 Now we have three scenarios:
 
 1. If you only need to proxy the browser. This works for **any version**.
@@ -84,7 +93,7 @@ Now we have three scenarios:
 
 3. This scenario involves configuring TUN Mode for specific programs. This is **only relevant** for versions **3.24** and **3.25**.
 
-### Scenario 1
+## *Scenario 1*: Enable your profile.
 
 **System Proxy mode**
 
@@ -92,9 +101,11 @@ Now we have three scenarios:
 - Select **Start**.
 - At the top, you will see **System Proxy Mode** — *turn it on*.
 
+![NekoProxy](images/nekoray/nekorayproxy.png)
+
 **Done.**
 
-### Scenario 2
+## *Scenario 2*:
 
 **For 3.26 version**
 
@@ -106,15 +117,20 @@ Now we have three scenarios:
 - Mode **TUN**: Turn off.  
 - Enable **Whitelist Mode** (*although in version ***3.26***, it doesn’t work properly — or at all*).  
 
-Next:
+![nekoraytunsettings](images/nekoray/nekoraysettingtun2.png)
+
+
+**Next:**
 
 - Right-click on the **profile**.
 - Select **Start**.
 - At the top, you will see **TUN Mode** — turn it on. You will be prompted to restart the program as **an administrator**. **Confirm**.
 
+![Nekoraytunmode](images/nekoray/nekoraytunmode.png)
+
 **Done.**
 
-### Scenario 3
+## *Scenario 3*:
 
 1. Go to the Settings tab.
 2. Open **TUN Mode** Settings.
@@ -132,15 +148,19 @@ Now, in the second column, **Proxy Processes**, enter the processes you want to 
 `firefox.exe`    
 etc.
 
+![nekoraytunsettings](images/nekoray/nekoraysettingtun1.png)
+
 **Next:** 
 
 - Right-click on the **profile**.
 - Select **Start**.
 - At the top, you will see **TUN Mode** — turn it on. You will be prompted to restart the program as **an administrator**. **Confirm**.
 
+![Nekoraytunmode](images/nekoray/nekoraytunmode.png)
+
 **Done.**
 
-### Processes of popular browsers
+## Processes of popular browsers ;
 
 - Google Chrome: `chrome.exe`
 
