@@ -7,7 +7,7 @@ Before we begin, note that there are two installation options depending on your 
 
 This is because in version ***3.26***, the "Whitelist Mode" in Tun Mode settings does not work. As a result, you won’t be able to proxy only specific applications.
 
-## *1. Install* 
+## 1. Install 
 
 Installing and Configuring Nekoray
 
@@ -37,7 +37,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 - [Download 1.3.2 arm64-v8a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-arm64-v8a.apk)  
 - [Download 1.3.2 armeabi-v7a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-armeabi-v7a.apk)  
 
-## *2. Installing Nekoray on Windows*
+## 2. Installing Nekoray on Windows
 
 Next, we will look at the installation process for Nekoray on Windows. Some steps may vary depending on the system, but the overall process remains the same.
 
@@ -57,7 +57,7 @@ Step 3: Launching the Program
 
 The program works out of the box. No installation is required.
 
-## *3. Initial Setup of Nekoray*
+## 3. Initial Setup of Nekoray
 
 1. Core Selection:
 
@@ -84,7 +84,7 @@ Now we have three scenarios:
 
 3. This scenario involves configuring TUN Mode for specific programs. This is **only relevant** for versions **3.24** and **3.25**.
 
-### *Scenario 1*: Enable your profile.
+### Scenario 1
 
 **System Proxy mode**
 
@@ -94,7 +94,7 @@ Now we have three scenarios:
 
 **Done.**
 
-### *Scenario 2*
+### Scenario 2
 
 **For 3.26 version**
 
@@ -114,7 +114,7 @@ Next:
 
 **Done.**
 
-### *Scenario 3*
+### Scenario 3
 
 1. Go to the Settings tab.
 2. Open **TUN Mode** Settings.
