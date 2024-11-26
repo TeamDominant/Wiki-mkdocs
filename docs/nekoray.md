@@ -84,7 +84,7 @@ Now we have three scenarios:
 
 3. This scenario involves configuring TUN Mode for specific programs. This is **only relevant** for versions **3.24** and **3.25**.
 
-## *Scenario 1*: Enable your profile.
+### *Scenario 1*: Enable your profile.
 
 **System Proxy mode**
 
@@ -94,7 +94,7 @@ Now we have three scenarios:
 
 **Done.**
 
-## *Scenario 2*:
+### *Scenario 2*
 
 **For 3.26 version**
 
@@ -114,7 +114,7 @@ Next:
 
 **Done.**
 
-## *Scenario 3*:
+### *Scenario 3*
 
 1. Go to the Settings tab.
 2. Open **TUN Mode** Settings.
@@ -140,7 +140,7 @@ etc.
 
 **Done.**
 
-## Processes of popular browsers ;
+### Processes of popular browsers
 
 - Google Chrome: `chrome.exe`
 
