@@ -1,6 +1,6 @@
 
 
-## Here you will find: tips, programs, and fixes for Nothing Phone issues.
+# Here you will find: tips, programs, and fixes for Nothing Phone issues.
 
 Test menu: *#*#0#*#*
 
