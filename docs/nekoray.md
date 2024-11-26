@@ -160,6 +160,7 @@ etc.
 
 *Source* - [AEZA](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
-<image src="C:\Users\Biskvik\Desktop\1.png" alt="Тест">
+
+![test](C:\Users\Biskvik\Desktop\1.png)
 
 
