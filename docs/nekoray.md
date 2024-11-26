@@ -67,7 +67,7 @@ If you were not given this choice or selected something other than sing-box, you
 - Click on **Settings**
 - General **Settings**
 - Navigate to the **Core** tab
-- Select **sing-box**.
+- Select `sing-box`.
 
 2. Adding a Profile
 
@@ -92,7 +92,7 @@ Now we have three scenarios:
 - Select **Start**.
 - At the top, you will see **System Proxy Mode** — *turn it on*.
 
-***Done***
+**Done.**
 
 ## *Scenario 2*:
 
@@ -112,17 +112,17 @@ Next:
 - Select **Start**.
 - At the top, you will see **TUN Mode** — turn it on. You will be prompted to restart the program as **an administrator**. **Confirm**.
 
-***Done***
+**Done.**
 
 ## *Scenario 3*:
 
 1. Go to the Settings tab.
 2. Open **TUN Mode** Settings.
 3. Configure the following:  
-- Stack: **Mixed**  
-- MTU: **1500** (*you can leave it at 9000, but we recommend 1500*).  
-- Mode **TUN**: Turn off.  
-- Enable **Whitelist Mode**.
+- Stack: `Mixed`  
+- MTU: `1500` (*you can leave it at 9000, but we recommend setting to 1500*).  
+- Mode **TUN**: `Turn off`.  
+- Enable `Whitelist Mode`.
 
 Now, in the second column, **Proxy Processes**, enter the processes you want to proxy.
 
@@ -158,7 +158,7 @@ etc.
 
 ## 
 
-*Source* - [AEZA](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
+> *Source* - [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
 
 ![test](C:\Users\Biskvik\Desktop\1.png)
