@@ -9,9 +9,9 @@ Wush - wush is a command line tool that lets you easily transfer files and open 
 3. Automatic peer-to-peer connections over UDP.  
 4. Endless possibilities; rsync, ssh, etc.  
 
-# Commands
+## Commands
 
-## USAGE:
+# USAGE:
 
 **Wush** subcommand
 
@@ -45,7 +45,7 @@ Copy a single file to the host:
 `--version bool`  
 Print the version and exit.
 
-## Install
+# Install
 
 Download file from [Git](https://github.com/coder/wush/releases/tag/v0.3.0)
 
@@ -55,7 +55,7 @@ For *Windows*: Extract the files to a folder and drive of your choice. Files tha
 
 On *Linux*, installation is done using the method that works best for you. Files (at least for us) were saved/sent to/from the Home directory.
 
-## How to use
+# How to use
 
 Now let's transfer a PNG file from one machine to another. In our case, Windows will act as the host, and Linux will be the client.  
 To do this, open **CMD** from the folder where **Wush** is located. Then, enter the following commands:
@@ -85,7 +85,7 @@ How looking it
 
 **Well Done**
 
-## SSH
+# SSH
 
 You can also use Wush for remote access to a machine's console.
 The connection is also established using an Auth key.
