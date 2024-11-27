@@ -29,9 +29,9 @@ Transfer files to the wush host using rsync:
 
 Copy a single file to the host:  
 
-    $ wush cp local-file.txt
+    $ wush cp local-file.txt  
 
-# SUBCOMMANDS:
+**SUBCOMMANDS:**
 |     Command     |          Meaning           | 
 |-----------------|----------------------------|
 | `cp`            | Transfer files.            |   
@@ -41,8 +41,10 @@ Copy a single file to the host:
 | `ssh`           | Open a shell.              | 
 | `version`       | Show wush version.         | 
 
-# OPTIONS:
-`--version bool`  
+**OPTIONS**:  
+
+    $ wush --version bool 
+
 Print the version and exit.
 
 ## Install
