@@ -26,3 +26,4 @@
 - [iPhone](iphone)
 - [Nothing Phone](nothing) 
 - [Setup list](setuplist)
+- [Wush](wush)
