@@ -13,9 +13,7 @@ Wush - wush is a command line tool that lets you easily transfer files and open 
 
 ## USAGE:
 
-wush <subcommand>
-*
-*wush 0.3.0 - peer-to-peer file transfers and shells*
+**Wush** subcommand
 
 Start the wush server:          
 
