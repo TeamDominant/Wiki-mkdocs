@@ -25,4 +25,4 @@
 
 - [iPhone](iphone)
 - [Nothing Phone](nothing) 
-- [Setup list](setup-list)
+- [Setup list](setuplist)
