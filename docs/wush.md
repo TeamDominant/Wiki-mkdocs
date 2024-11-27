@@ -11,7 +11,7 @@ Wush - wush is a command line tool that lets you easily transfer files and open 
 
 ## Commands
 
-# USAGE:
+**USAGE:** 
 
 **Wush** subcommand
 
@@ -46,6 +46,7 @@ Copy a single file to the host:
     $ wush --version bool 
 
 Print the version and exit.
+
 
 ## Install
 
