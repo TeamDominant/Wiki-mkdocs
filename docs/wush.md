@@ -17,19 +17,27 @@ Wush - wush is a command line tool that lets you easily transfer files and open 
 
 Start the wush server:          
 
-    $ wush serve  
+```bash
+wush serve
+```
 
 Open a shell to the wush host:  
 
-    $ wush ssh 
+```bash
+wush ssh 
+```
 
 Transfer files to the wush host using rsync:  
 
-    $ wush rsync local-file.txt :/path/to/remote/file  
+```bash
+wush rsync local-file.txt :/path/to/remote/file  
+```
 
 Copy a single file to the host:  
 
-    $ wush cp local-file.txt  
+```bash
+wush cp local-file.txt  
+```
 
 **SUBCOMMANDS:**
 |     Command     |          Meaning           | 
@@ -43,7 +51,9 @@ Copy a single file to the host:
 
 **OPTIONS**:  
 
-    $ wush --version bool 
+```bash
+wush --version bool 
+```
 
 Print the version and exit.
 
@@ -65,15 +75,18 @@ To do this, open **CMD** from the folder where **Wush** is located. Then, enter 
 
 **Obtain the host machine's auth key using the following command:** 
 
-    $ ./Wush serve 
+```bash
+./Wush serve 
+```
 
 ![wushserve](images\wush\wushserve.png)
 *Copy `Auth key`*
 
 **Now, on the client machine, enter the command to send the file:**
 
-    $ wush cp 2.png
-
+```bash
+wush cp 2.png
+```
 
 ![wushcp](images\wush\wushcp.png)
 **`2.png`* is the file that we want to send from Linux to Windows.*  
@@ -97,11 +110,15 @@ Use the following commands:
 
 For hosts  
 
-    $ Wush serve
+```bash
+Wush serve
+```
 
 For client 
 
-    $ Wush ssh
+```bash
+Wush ssh
+```
 
 ## 
 
