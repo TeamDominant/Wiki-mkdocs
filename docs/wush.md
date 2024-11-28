@@ -96,7 +96,7 @@ wush cp 2.png
 
 How looking it
 
-![wushgif](images\wush\wush.gif)
+![wushgif](images/wush/wush.gif)
 
 
 **Well Done**
