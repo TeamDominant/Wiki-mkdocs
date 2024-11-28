@@ -59,7 +59,6 @@ You are supposed to test it yourself because it works differently on each VPS, I
 
 Click on the QR code icon next to the created client, then click the QR code to copy it to the clipboard, and paste it into Nekoray/Streisand.
 
-Click on the QR code icon next to the created client, then click on the QR code to copy it to the clipboard and paste it into Nekoray/Streisand.
 
 ## Securing and little tweaks
 ### Fail2ban
