@@ -79,7 +79,7 @@ To do this, open **CMD** from the folder where **Wush** is located. Then, enter 
 ./Wush serve 
 ```
 
-![wushserve](images\wush\wushserve.png)
+![wushserve](images/wush/wushserve.png)
 *Copy `Auth key`*
 
 **Now, on the client machine, enter the command to send the file:**
@@ -88,7 +88,7 @@ To do this, open **CMD** from the folder where **Wush** is located. Then, enter 
 wush cp 2.png
 ```
 
-![wushcp](images\wush\wushcp.png)
+![wushcp](images/wush/wushcp.png)
 **`2.png`* is the file that we want to send from Linux to Windows.*  
 
 **In the client console, we paste the key that was obtained earlier on the host machine.**
