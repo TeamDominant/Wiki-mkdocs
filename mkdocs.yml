@@ -71,6 +71,7 @@ nav:
     - Start Page: index.md
     - Getting Started: gettingstarted.md
   - Software:
+    - Apps: apps.md
     - Discord: discord.md
     - Firefox: firefox.md
     - Telegram: telegram.md
@@ -86,5 +87,4 @@ nav:
   - Other:
     - iPhone: iphone.md
     - Nothing Phone: nothing.md
-    - Setup list: setuplist.md
     - Wush: wush.md
