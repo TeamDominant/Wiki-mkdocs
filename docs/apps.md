@@ -8,7 +8,7 @@
 | ----------- | ----------- |
 | [Firefox](https://www.mozilla.org/en-US/) | [Firefox](https://www.mozilla.org/en-US/) Firefox is a free and open-source web browser developed by Mozilla. Known for its speed, privacy-focused features, and customizability, it provides users with a secure and efficient browsing experience across multiple platforms, including Windows, macOS, Linux, and mobile devices. [Betterfox](https://github.com/TeamDominant/Betterfox) installation is required for better experience. |  
 | [Betterfox](https://github.com/TeamDominant/Betterfox) | Firefox user.js for speed, privacy, and security. Your favorite browser, but better. [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) fork and improved for personal preferences. |  
-| [Floorp](https://github.com/TeamDominant/Betterfox) | Floorp is a modern, open-source browser designed for users who value speed, privacy, and convenience. Floorp incorporates enhancements from [Betterfox](https://github.com/yokoffing/Betterfox), bringing an extra layer of performance tuning and privacy improvements. |  
+| [Floorp](https://github.com/Floorp-Projects/Floorp) | Floorp is a modern, open-source browser designed for users who value speed, privacy, and convenience. Floorp incorporates enhancements from [Betterfox](https://github.com/yokoffing/Betterfox), bringing an extra layer of performance tuning and privacy improvements. |  
 
 ## SSH
 
