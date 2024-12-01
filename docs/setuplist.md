@@ -43,3 +43,14 @@
 | Application | Description |
 | ----------- | ----------- |
 | [OBS](https://obsproject.com/) | OBS (Open Broadcaster Software) is a free and open-source software for video recording and live streaming. It allows users to capture and broadcast high-quality video and audio from various sources, such as screens, webcams, and external devices. With advanced features like scene transitions, customizable layouts, and real-time video mixing, OBS is widely used by content creators, streamers, and professionals for its flexibility and performance. |
+
+## Remote access
+| Application | Description |
+| ----------- | ----------- |
+| [AnyDesk](https://anydesk.com/en) | AnyDesk is a powerful remote desktop software that allows users to access and control computers or devices from anywhere in the world. It is widely used for remote work, IT support, and online collaboration. The application is lightweight, fast, and secure, ensuring a seamless experience for both personal and professional use. | 
+| [RustDesk](https://github.com/rustdesk/rustdesk) | RustDesk is an open-source remote desktop software designed to provide a secure, fast, and user-friendly experience for remote access and control. Built with privacy in mind, RustDesk allows users to set up their own server for maximum security or use the default public relay and rendezvous servers. |
+
+## Tools
+| Application | Description |
+| ----------- | ----------- |
+| [PowerToys](https://github.com/microsoft/PowerToys) | PowerToys is a collection of free, open-source utilities for Windows that enhance productivity and provide advanced features for power users. Developed by Microsoft, these tools allow users to customize and improve their Windows experience with a variety of enhancements. PowerToys provides a suite of utilities designed to make common tasks easier and improve system functionality. | 
