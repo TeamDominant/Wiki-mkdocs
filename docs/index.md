@@ -4,6 +4,7 @@
 
 ## Software
 
+- [Apps](apps)
 - [Discord](discord)
 - [Firefox](firefox)
 - [Telegram](telegram)
@@ -25,5 +26,4 @@
 
 - [iPhone](iphone)
 - [Nothing Phone](nothing) 
-- [Setup list](setuplist)
 - [Wush](wush)

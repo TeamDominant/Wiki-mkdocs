@@ -16,6 +16,9 @@
 - [BunnyManager](https://github.com/bunny-mod/BunnyManager/releases/latest) — **Non-root**
 
 ## Plugins & Themes
-Check out [Vendetta](https://discord.gg/n9QQ4XhhJP) Discord server.
+[Vendetta](https://discord.gg/n9QQ4XhhJP) Discord server.  
 > IMPORTANT  
-> As of 06/02/24, Vendetta has been discontinued.
+> As of 06/02/24, Vendetta has been discontinued.  
+
+[bunny.nexpid.xyz](https://bunny.nexpid.xyz/)  
+[vd-plugins.github.io](https://vd-plugins.github.io/web/#)  

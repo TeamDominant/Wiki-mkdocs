@@ -30,8 +30,8 @@ theme:
     - content.code.copy
   name: material
   custom_dir: overrides
-  favicon: images/logo.svg
-  logo: images/logo.svg
+  favicon: images/favicon.png
+  logo: images/logo.png
   font:
     code: Roboto Mono
   icon:
@@ -66,12 +66,12 @@ extra:
     - icon: fontawesome/solid/rss 
       link: /feed_rss_created.xml
   homepage: https://wiki.amdcloud.kz
-
 nav:
   - Home: 
     - Start Page: index.md
     - Getting Started: gettingstarted.md
   - Software:
+    - Apps: apps.md
     - Discord: discord.md
     - Firefox: firefox.md
     - Telegram: telegram.md
@@ -87,5 +87,4 @@ nav:
   - Other:
     - iPhone: iphone.md
     - Nothing Phone: nothing.md
-    - Setup list: setuplist.md
     - Wush: wush.md
