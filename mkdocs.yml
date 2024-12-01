@@ -30,8 +30,8 @@ theme:
     - content.code.copy
   name: material
   custom_dir: overrides
-  favicon: images/logo.svg
-  logo: images/logo.svg
+  favicon: images/favicon.png
+  logo: images/logo.png
   font:
     code: Roboto Mono
   icon:
