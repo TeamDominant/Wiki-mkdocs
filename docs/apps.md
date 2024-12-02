@@ -1,4 +1,4 @@
-# Setup-list 
+# Apps
 
 # Here you will find a list of useful programs. Go for it! 
 
