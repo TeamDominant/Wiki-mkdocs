@@ -55,3 +55,20 @@
 | Application | Description |
 | ----------- | ----------- |
 | [PowerToys](https://github.com/microsoft/PowerToys) | PowerToys is a collection of free, open-source utilities for Windows that enhance productivity and provide advanced features for power users. Developed by Microsoft, these tools allow users to customize and improve their Windows experience with a variety of enhancements. PowerToys provides a suite of utilities designed to make common tasks easier and improve system functionality. | 
+
+## Notes 
+| Application | Description |
+| ----------- | ----------- |
+| [Obsidian](https://obsidian.md/) | Obsidian is a powerful and versatile note-taking and knowledge management application designed for users who value flexibility, customization, and the ability to create a connected "second brain." It's popular among students, researchers, writers, and professionals who need an efficient system for organizing their thoughts, notes, and projects. |
+| [Notion](https://www.notion.com/) | Notion is an all-in-one productivity and note-taking platform that combines features like document creation, task management, database organization, and team collaboration. It’s designed to be highly customizable, making it suitable for individuals, teams, and businesses alike. |
+
+## Virtual machine
+| Application | Description |
+| ----------- | ----------- |
+| [VirtualBox](https://www.virtualbox.org/) | Oracle VM VirtualBox is a free, open-source virtualization software that allows users to run multiple operating systems on a single physical machine. VirtualBox supports a wide range of guest operating systems, including various versions of Windows, Linux, macOS (with restrictions), and others. It is used for testing, development, learning, and running software in isolated environments, all while keeping your host system unchanged. |
+| [VMware Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) | VMware Workstation is a powerful desktop virtualization software developed by VMware, widely used for running multiple operating systems on a single physical machine. It provides robust features for developers, IT professionals, and businesses who need to test, develop, and run virtual machines in a stable and secure environment. VMware Workstation is known for its advanced capabilities and superior performance, making it a top choice for both personal and enterprise use. |
+
+## Audio
+| Application | Description |
+| ----------- | ----------- |
+| [Audacity](https://www.audacityteam.org/) | Audacity is a free, open-source, and cross-platform audio editing software widely used for recording, editing, and processing audio files. Available on Windows, macOS, and Linux, Audacity is popular among podcasters, musicians, sound engineers, and anyone who needs a versatile tool for working with audio. It provides a comprehensive set of features for both basic and advanced audio editing, making it suitable for beginners and professionals alike. |
