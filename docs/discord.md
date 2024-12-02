@@ -22,3 +22,11 @@
 
 [bunny.nexpid.xyz](https://bunny.nexpid.xyz/)  
 [vd-plugins.github.io](https://vd-plugins.github.io/web/#)  
+
+## Plugins for Vencord
+
+- **CallTimer** - Adds a timer to vcs.  
+- **ShowConnections** - Show connected accounts in user popouts.  
+- **ShowAllMessageButtons** - Always show all message buttons no matter if you are holding the shift key or not.  
+- **FriendsSince** - Shows when you became friends with someone in the user popout.  
+- **FakeNitro** - fake nitro, lol :D
