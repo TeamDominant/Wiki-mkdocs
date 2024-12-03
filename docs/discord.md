@@ -28,6 +28,32 @@
 - RoleColorEverywhere
 - ValidUser
 
+### Online themes
+If you prefer adding themes via OpenAsar, use this method:  
+**Lucord theme**
+```css
+@import url("https://lucord.wmeluna.com/theme.css");
+```
+If you prefer using online themes from vencord itself like a normal guy, use this:  
+**Gruvbox theme**
+```
+https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css
+```
+**Vencord (?)**
+```
+https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css
+```
+
+**Amoled (recommended)**
+```
+https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css
+```
+
+**rosebox**
+```
+https://kraxen72.github.io/rosebox/discord/dist/main.css
+```
+
 ## iOS
 
 - [BunnyTweak](https://github.com/bunny-mod/BunnyTweak/releases/latest) — Get prebuilt rootful and rootless `.deb` files or the prepatched `.ipa `
