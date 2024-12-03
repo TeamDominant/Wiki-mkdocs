@@ -1,10 +1,32 @@
-# Discord
+# Client modifications
 
 ## PC
 
 - [OpenAsar](https://openasar.dev) — perfomance tweak  
 - [Vencord](https://vencord.dev) — better alternative of BetterDiscord w/ OpenAsar (**recommended**)
 - [Vesktop](https://github.com/Vencord/Vesktop) — Vencord, but w/ perfomance of web Discord  *(Linux, not sure about macOS)*
+
+### Recommended plugins
+- AlwaysTrust
+- BetterFolders
+- BetterSessions
+- ClearURLs
+- ColorSighted
+- CrashHandler
+- DisableCallIdle
+- GameActivityToggle
+- ImageZoom
+- MessageLogger
+- NewGuildSettings
+- NoBlockedMessages
+- NoF1
+- NoReplyMention
+- NoTypingAnimation
+- PinDMs
+- PlatformIndicators
+- RelationshipNotifier
+- RoleColorEverywhere
+- ValidUser
 
 ## iOS
 
