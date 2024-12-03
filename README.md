@@ -1,4 +1,4 @@
-# Wiki
+# [wiki.amdcloud.kz](https://wiki.amdcloud.kz)
 
 > [!WARNING]
 > Some of information was taken from [virtualize.link](https://virtualize.link/). \
