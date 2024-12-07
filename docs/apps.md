@@ -53,6 +53,7 @@
 | Application | Description |
 | ----------- | ----------- |
 | [PowerToys](https://github.com/microsoft/PowerToys) | PowerToys is a collection of free, open-source utilities for Windows that enhance productivity and provide advanced features for power users. Developed by Microsoft, these tools allow users to customize and improve their Windows experience with a variety of enhancements. PowerToys provides a suite of utilities designed to make common tasks easier and improve system functionality. | 
+| [EarTrumpet](https://apps.microsoft.com/detail/9nblggh516xp?hl=ru-ru&gl=RU) | Is a powerful volume control app for Windows |
 
 ## Notes 
 | Application | Description |
