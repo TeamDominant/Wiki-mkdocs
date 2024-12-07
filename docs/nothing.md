@@ -1,6 +1,6 @@
 
 
-# Here you will find: tips, programs, and fixes for Nothing Phone issues.
+# *Here you will find: tips, programs, and fixes for Nothing Phone issues.*
 
 Test menu: *#*#0#*#*
 
@@ -45,3 +45,5 @@ To disable the voice notification that call recording has started, follow these 
 4. Go to **Apps** in the settings, find the **Phone app**, and open it. Tap Clear Cache and Clear Storage. Your contacts will remain safe (this is confirmed for the Google Phone app).
 
 **IMPORTANT**: The notification about call recording will appear during the first call, but it will not occur in subsequent calls
+
+
