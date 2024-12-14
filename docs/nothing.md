@@ -1,17 +1,13 @@
-
-
-# *Here you will find: tips, programs, and fixes for Nothing Phone issues.*
-
-Test menu: *#*#0#*#*
+# Nothing.tech
 
 ## Battery Drain
 
-If you have recently purchased the Nothing Phone 1, it might be running a very old firmware version, possibly as outdated as 1.0.2. Increased battery consumption may occur until you update to the latest version.
+If you have recently purchased the Nothing Phone Series, it might be running a very old firmware version, which is the reason for weird performance. Increased battery consumption may occur until you update to the latest version.
 
 *We also recommend doing the following:*
 
 1. Clear the cache and storage of the Nothing Launcher.  
-2. Clear the cache and delete the data of Google Play Services.  
+2. Clear the cache and delete the data of Google Play Services. *if os is fresh installed* 
 3. Clear the cache of Google Play Services for AR.  
 4. Set the battery usage mode for Nothing Launcher to "RESTRICTED."  
 5. Disable notification access for Nothing Launcher.  
@@ -44,6 +40,5 @@ To disable the voice notification that call recording has started, follow these 
 3. In the **Text-to-Speech** settings, select **`Default Text-to-Speech Engine`** and choose **`TTSLexx`**.
 4. Go to **Apps** in the settings, find the **Phone app**, and open it. Tap Clear Cache and Clear Storage. Your contacts will remain safe (this is confirmed for the Google Phone app).
 
-**IMPORTANT**: The notification about call recording will appear during the first call, but it will not occur in subsequent calls
-
-
+!!! note
+    The notification about call recording will appear during the first call, but it will not occur in subsequent calls.

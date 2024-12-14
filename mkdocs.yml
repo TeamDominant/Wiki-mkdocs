@@ -51,6 +51,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - pymdownx.tabbed
+      alternate_style: true 
   - attr_list
   - mdx_truly_sane_lists
 plugins:

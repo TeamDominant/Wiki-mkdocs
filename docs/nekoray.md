@@ -3,41 +3,53 @@
 Before we begin, note that there are two installation options depending on your needs:
 
 - If you only need the proxy to work in a browser, any version of **Nekoray** will do.
-- If you need to proxy specific applications, we recommend using versions ***3.24*** or ***3.25***.
+- If you need to proxy specific applications, we recommend using versions **3.24** or **3.25**.
 
-This is because in version ***3.26***, the "Whitelist Mode" in Tun Mode settings does not work. As a result, you won’t be able to proxy only specific applications.
+This is because in version **3.26**, the "Whitelist Mode" in Tun Mode settings does not work. As a result, you won’t be able to proxy only specific applications.
 
-## *1. Install* 
+## 1. Install 
 
 Installing and Configuring Nekoray
 
 Here is a list of all available download links for Nekoray, categorized by operating system:
 
 1. Nekoray for Windows (64-bit)  
-- [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)  
-- [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-windows64.zip)  
-- [Download 3.24](https://github.com/MatsuriDayo/nekoray/releases/download/3.24/nekoray-3.24-2023-10-28-windows64.zip)  
+=== "Latest"
+    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+=== "3.26"
+    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)
+=== "3.25"
+    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-windows64.zip)
 
-2. Nekoray for linux (64-bit, archive)    
-- [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)  
-- [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux64.zip)  
-- [Download 3.24](https://github.com/MatsuriDayo/nekoray/releases/download/3.24/nekoray-3.24-2023-10-28-linux64.zip)  
+2. Nekoray for linux (64-bit, archive)  
+=== "Latest"
+    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+=== "3.26"
+    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)
+=== "3.25"
+    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux64.zip)
 
 3. Nekoray for Linux (AppImage)  
-- [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)  
-- [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux-x64.AppImage)  
-- [Download 3.24](https://github.com/MatsuriDayo/nekoray/releases/download/3.24/nekoray-3.24-2023-10-28-linux-x64.AppImage)  
+=== "Latest"
+    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+=== "3.26"
+    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)
+=== "3.25"
+    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux-x64.AppImage)  
 
 4. Nekoray for Debian/Ubuntu (64-bit, package .deb)  
-- [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)  
-- [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-debian-x64.deb)  
-- [Download 3.24](https://github.com/MatsuriDayo/nekoray/releases/download/3.24/nekoray-3.24-2023-10-28-debian-x64.deb)  
+=== "Latest"
+    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+=== "3.26"
+    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-debian-x64.deb)
+=== "3.25"
+    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-debian-x64.deb) 
 
 5. Nekoray for Android  
 - [Download 1.3.2 arm64-v8a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-arm64-v8a.apk)  
 - [Download 1.3.2 armeabi-v7a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-armeabi-v7a.apk)  
 
-## *2. Installing Nekoray on Windows*
+## 2. Installing Nekoray on Windows
 
 Next, we will look at the installation process for Nekoray on Windows. Some steps may vary depending on the system, but the overall process remains the same.
 
@@ -57,7 +69,7 @@ Step 3: Launching the Program
 
 The program works out of the box. No installation is required.
 
-## *3. Initial Setup of Nekoray*
+## 3. Initial Setup of Nekoray
 
 1. Core Selection:
 
@@ -93,7 +105,7 @@ Now we have three scenarios:
 
 3. This scenario involves configuring TUN Mode for specific programs. This is **only relevant** for versions **3.24** and **3.25**.
 
-## *Scenario 1*: Enable your profile.
+## Scenario 1
 
 **System Proxy mode**
 
@@ -105,7 +117,7 @@ Now we have three scenarios:
 
 **Done.**
 
-## *Scenario 2*:
+## Scenario 2
 
 **For 3.26 version**
 
@@ -115,7 +127,7 @@ Now we have three scenarios:
 - Stack: **Mixed**  
 - MTU: **1500** (*you can leave it at 9000, but we recommend 1500*).  
 - Mode **TUN**: Turn off.  
-- Enable **Whitelist Mode** (*although in version ***3.26***, it doesn’t work properly — or at all*).  
+- Enable **Whitelist Mode** (*although in version **3.26**, it doesn’t work properly — or at all*).  
 
 ![nekoraytunsettings](images/nekoray/nekoraysettingtun2.png)
 
@@ -130,7 +142,7 @@ Now we have three scenarios:
 
 **Done.**
 
-## *Scenario 3*:
+## Scenario 3:
 
 1. Go to the Settings tab.
 2. Open **TUN Mode** Settings.

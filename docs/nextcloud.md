@@ -1,6 +1,7 @@
 # Optimizing Nextcloud
 
-> Little disclaimer. Some information was copied from [virtualize.link](https://virtualize.link/), because I find information provided by its author useful. Make sure to check the [source](https://github.com/quietsy/advanced-configurations) or star the repo.
+!!! warning
+  Little disclaimer. Some information was copied from [virtualize.link](https://virtualize.link/), because I find information provided by its author useful. Make sure to check the [source](https://github.com/quietsy/advanced-configurations) or star the repo.
 
 The following is a collection of ways to optimize Nextcloud's performance and responsiveness.
 

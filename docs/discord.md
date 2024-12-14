@@ -28,31 +28,57 @@
 - RoleColorEverywhere
 - ValidUser
 
-### Online themes
-If you prefer adding themes via OpenAsar, use this method:  
+### Online themes  
 **Lucord theme**
-```css
-@import url("https://lucord.wmeluna.com/theme.css");
-```
-If you prefer using online themes from vencord itself like a normal guy, use this:  
-**Gruvbox theme**
-```
-https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css
-```
-**Vencord (?)**
-```
-https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css
-```
+=== "OpenAsar"
+    ```css
+    @import url("https://lucord.wmeluna.com/theme.css");
+    ```
+=== "Online Theming"
+    ```css
+    https://lucord.wmeluna.com/theme.css
+    ```
 
-**Amoled (recommended)**
-```
-https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css
-```
+**Gruvbox theme**
+=== "OpenAsar"
+    ```css
+    @import url("https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css");
+    ```
+=== "Online Theming"
+    ```css
+    https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css
+    ```
+
+**Vencord (?)**
+=== "OpenAsar"
+    ```css
+    @import url("https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css");
+    ```
+=== "Online Theming"
+    ```css
+    https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css
+    ```
+
+**Amoled**
+=== "OpenAsar"
+    ```css
+    @import url("https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css");
+    ```
+=== "Online Theming"
+    ```css
+    https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css
+    ```
 
 **rosebox**
-```
-https://kraxen72.github.io/rosebox/discord/dist/main.css
-```
+=== "OpenAsar"
+    ```css
+    @import url("https://kraxen72.github.io/rosebox/discord/dist/main.css);
+    ```
+=== "Online Theming"
+    ```css
+    https://kraxen72.github.io/rosebox/discord/dist/main.css
+    
+    ```
 
 ## iOS
 
@@ -65,8 +91,8 @@ https://kraxen72.github.io/rosebox/discord/dist/main.css
 
 ## Plugins & Themes
 [Vendetta](https://discord.gg/n9QQ4XhhJP) Discord server.  
-> IMPORTANT  
-> As of 06/02/24, Vendetta has been discontinued.  
+!!! warning  
+    As of 06/02/24, Vendetta has been discontinued.  
 
 [bunny.nexpid.xyz](https://bunny.nexpid.xyz/)  
 [vd-plugins.github.io](https://vd-plugins.github.io/web/#)  

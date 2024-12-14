@@ -2,9 +2,10 @@
 31% [faster](https://medium.com/@mihirgrand/comparing-popular-firefox-forks-6fa83fdfdaad#:~:text=31%25%20more%20than%20vanilla%20Firefox) than regular Firefox 
 
 ## Required reading
-Create a [backup profile](https://github.com/yokoffing/Betterfox/wiki/Backup), if you feel unsure about the changes.
+!!! note
+   Create a [backup profile](https://github.com/yokoffing/Betterfox/wiki/Backup), if you feel unsure about the changes.
 
-*If you don't have it already: [Get Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)*
+If you don't have it already: [Get Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
 
 ## Installation
 1. Download the user.js file [here](https://raw.githubusercontent.com/TeamDominant/Betterfox/main/user.js) (Right click > `Save Link As…`).
@@ -30,7 +31,8 @@ Create a [backup profile](https://github.com/yokoffing/Betterfox/wiki/Backup), i
 **Follow the original [Betterfox wiki](https://github.com/yokoffing/Betterfox/wiki)**
 
 ### Passwords override
-For those who store passwords in the browser (in a Mozilla account) - remove the `//` at the beginning of line 238; otherwise, the browser won't suggest entering the saved password.
+!!! danger 
+   For those who store passwords in the browser (in a Mozilla account) - remove the `//` at the beginning of line 238; otherwise, the browser won't suggest entering the saved password.
 
 1. Open `user.js` with any IDE
 2. Move to the end of file and edit line 238 as said above.

@@ -6,7 +6,7 @@ The setup was used in my case:
 
 - OS: Ubuntu 22.04.5
 - 3x-ui Version: 2.4.6
-- VPS: [Aeza](https://aeza.net/?ref=572663)
+- VPS: [Aéza](https://aeza.net/?ref=572663)
 
 ## Installation
 
