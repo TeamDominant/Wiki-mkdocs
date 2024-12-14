@@ -35,7 +35,7 @@
     @import url("https://lucord.wmeluna.com/theme.css");
     ```
 === "Online Theming"
-    ```css
+    ```
     https://lucord.wmeluna.com/theme.css
     ```
 
@@ -45,7 +45,7 @@
     @import url("https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css");
     ```
 === "Online Theming"
-    ```css
+    ```
     https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css
     ```
 
@@ -55,7 +55,7 @@
     @import url("https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css");
     ```
 === "Online Theming"
-    ```css
+    ```
     https://raw.githubusercontent.com/Synqat/vencord-theme/main/theme.css
     ```
 
@@ -65,7 +65,7 @@
     @import url("https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css");
     ```
 === "Online Theming"
-    ```css
+    ```
     https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css
     ```
 
@@ -75,7 +75,7 @@
     @import url("https://kraxen72.github.io/rosebox/discord/dist/main.css);
     ```
 === "Online Theming"
-    ```css
+    ```
     https://kraxen72.github.io/rosebox/discord/dist/main.css
     
     ```

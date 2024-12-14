@@ -3,7 +3,7 @@
 
 ## Required reading
 !!! note
-   Create a [backup profile](https://github.com/yokoffing/Betterfox/wiki/Backup), if you feel unsure about the changes.
+    Create a [backup profile](https://github.com/yokoffing/Betterfox/wiki/Backup), if you feel unsure about the changes.
 
 If you don't have it already: [Get Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
 
@@ -32,7 +32,7 @@ If you don't have it already: [Get Firefox](https://www.mozilla.org/en-US/firefo
 
 ### Passwords override
 !!! danger 
-   For those who store passwords in the browser (in a Mozilla account) - remove the `//` at the beginning of line 238; otherwise, the browser won't suggest entering the saved password.
+    For those who store passwords in the browser (in a Mozilla account) - remove the `//` at the beginning of line 238; otherwise, the browser won't suggest entering the saved password.
 
 1. Open `user.js` with any IDE
 2. Move to the end of file and edit line 238 as said above.
