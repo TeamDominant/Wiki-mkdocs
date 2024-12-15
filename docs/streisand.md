@@ -1,8 +1,8 @@
 # Streisand
 
 Streisand is expected to be used on iOS devices only. If you are an Android user, please use the following alternatives:
-- [NekoBox](nekoray/#install)
-- Amnezia
+- [NekoBox](nekoray/#install)  
+- Amnezia  
 
 ## Configuration
 
