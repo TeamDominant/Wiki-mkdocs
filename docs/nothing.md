@@ -1,7 +1,5 @@
 # Nothing.tech
 
-[=50% "50%"]{: .candystripe .candystripe-animate}
-
 ## Configuration
 
 ## Apps
