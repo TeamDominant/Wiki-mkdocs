@@ -13,7 +13,7 @@ Installing and Configuring Nekoray
 
 Here is a list of all available download links for Nekoray, categorized by operating system:
 
-1. Nekoray for Windows (64-bit)  
+- **Nekoray for Windows (64-bit)**
 === "Latest"
     [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
 === "3.26"
@@ -21,7 +21,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 === "3.25"
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-windows64.zip)
 
-2. Nekoray for linux (64-bit, archive)  
+- **Nekoray for linux (64-bit, archive)**
 === "Latest"
     [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
 === "3.26"
@@ -29,7 +29,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 === "3.25"
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux64.zip)
 
-3. Nekoray for Linux (AppImage)  
+- **Nekoray for Linux (AppImage)**
 === "Latest"
     [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
 === "3.26"
@@ -37,7 +37,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 === "3.25"
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux-x64.AppImage)  
 
-4. Nekoray for Debian/Ubuntu (64-bit, package .deb)  
+- **Nekoray for Debian/Ubuntu (64-bit, package .deb)**
 === "Latest"
     [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
 === "3.26"
@@ -45,9 +45,11 @@ Here is a list of all available download links for Nekoray, categorized by opera
 === "3.25"
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-debian-x64.deb) 
 
-5. Nekoray for Android  
-- [Download 1.3.2 arm64-v8a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-arm64-v8a.apk)  
-- [Download 1.3.2 armeabi-v7a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.2/NB4A-1.3.2-armeabi-v7a.apk)  
+- **Nekoray for Android**
+=== "arm64-v8a"
+    [Download Latest for arm64-v8a](github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
+=== "armeabi-v7a"
+    [Download Latest for armeabi-v7a](github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
 
 ## Installing Nekoray on Windows
 
