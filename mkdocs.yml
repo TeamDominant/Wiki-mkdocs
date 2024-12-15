@@ -5,6 +5,10 @@ edit_uri: ""
 repo_url: https://github.com/TeamDominant/Wiki
 theme:
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -18,7 +22,7 @@ theme:
       accent: indigo
       toggle:
         icon: material/weather-night 
-        name: Switch to dark mode
+        name: Switch to system preference
   features:
     - navigation.tabs
     - navigation.sections
