@@ -1,5 +1,9 @@
 # Nothing.tech
 
+## Configuration
+
+## Apps
+
 ## Battery Drain
 
 If you have recently purchased the Nothing Phone Series, it might be running a very old firmware version, which is the reason for weird performance. Increased battery consumption may occur until you update to the latest version.
