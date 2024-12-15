@@ -192,7 +192,8 @@ etc.
 
 ## 
 
-> *Source* - [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
+???+ note "Source"
+    [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
 
 
