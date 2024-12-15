@@ -52,6 +52,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - pymdownx.progressbar
+  - pymdownx.tasklist
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true 
   - attr_list
