@@ -28,3 +28,4 @@
 - [iPhone](iphone)
 - [Nothing Phone](nothing) 
 - [Wush](wush)
+- [Archlinux](arch)
