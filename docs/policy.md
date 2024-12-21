@@ -1,6 +1,7 @@
 # Privacy policy
-
-**Effective Date: 21st of December 2024- 21st of January 2025**
+!!! danger 
+    This page is deprecated and was created for testing only. Our organization doesn't have any registrations yet, so this document is like a funny-draft only.
+**Effective Date: [date]**
 
 **Introduction**  
 Amdcloud (Adaptive Multi-Device Cloud) respects your privacy and is committed to protecting your personal information. This privacy policy explains how we collect, use, and protect the data you provide when using our services, including Nextcloud, Vaultwarden (Bitwarden), and Zipline.

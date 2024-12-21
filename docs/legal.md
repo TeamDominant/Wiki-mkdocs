@@ -1,6 +1,8 @@
 # Legal Notice
 
-**Effective Date: 21st of December 2024- 21st of January 2025** 
+!!! danger 
+    This page is deprecated and was created for testing only. Our organization doesn't have any registrations yet, so this document is like a funny-draft only.
+**Effective Date: [date]**
 
 This Legal Notice governs the use of the services and intellectual property provided by Amdcloud (Adaptive Multi-Device Cloud). By accessing or using our services, you agree to comply with the terms outlined below.  
 
