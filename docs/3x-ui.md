@@ -1,5 +1,8 @@
 # 3x-ui
 
+!!! warning
+    This guide is deprecated and needs to be updated.
+
 ## Setup used
 
 The setup was used in my case:
