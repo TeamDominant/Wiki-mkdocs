@@ -1,13 +1,13 @@
 # Streisand
 
-Streisand is expected to be used on iOS devices only. If you are an Android user, please use the following alternatives:
-- [NekoBox](nekoray/#install)  
+Streisand is expected to be used on iOS devices only. If you are an Android user, please use the following alternatives:  
+- [NekoBox](nekoray.md/#install)  
 - Amnezia  
 
 ## Configuration
 
 ### Get the configuration
-In our case, we use [3x-ui](3x-ui). Log in to the panel and then open the inbounds page. Find the client you need and then click on the QR-code icon.
+In our case, we use [3x-ui](3x-ui.md). Log in to the panel and then open the inbounds page. Find the client you need and then click on the QR-code icon.
 
 ### Import configuration into Streisand
 In Streisand, there is a "plus" icon in the top right corner. Click it and import your configuration in one of the following ways: scan the QR-code or click the QR-code in the panel to copy it to the clipboard, then press "import from clipboard" inside the app.

@@ -19,7 +19,7 @@ This page was written because I merged from iPhone 12 (64GB) to Nothing Phone (2
     - Auto-Join Hotspot: Never
     - Add Adguard DNS to your main Network if you need so
   - Proxy (Can't use the 3 letter word, so let's say it is Proxy)
-    - Self-hosted according to [3x-ui guide](3x-ui)
+    - Self-hosted according to [3x-ui guide](3x-ui.md)
     - Always-on (manual turn on with every reboot)
   - General
     - AirDrop: Contancts only
