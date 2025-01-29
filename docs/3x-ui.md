@@ -1,10 +1,7 @@
 # 3x-ui
 
-!!! warning
-    This guide is deprecated and needs to be updated.
-
 !!! danger
-    Remember: FUCK THE IDIOTS WHO TRIES TO SELL THE GUIDES, THEY ARE ALL OPEN-SOURCE AND ARE NOT SUPPOSED TO BE SOLD, SUCH PEOPLE BREAKS LAWS. I only take money if i'm being asked to do it myself ;)
+    Don't pay for the "private" guides, no one will tell you anything more, because there is no more functionality.
 
 ## Setup used
 
@@ -72,7 +69,7 @@ systemctl daemon-reload
 systemctl restart ssh
 ```
 
-!!! warn
+!!! warning
     Make sure your ufw is **NOT** running, so you can connect after you decide to reconnect. If you forgot to do add new port to ufw, then access your VPS by using VNC and make changes.
 
 ### Fail2ban
@@ -107,14 +104,13 @@ Type 20 (IP Limit Management) and press Enter. Then press 1 to install and type 
 
 ### Ufw
 
-1. 
 ```bash
 nano /etc/ufw/before.rules
 ```
 
 Change the values from `ACCEPT` to `DROP` and add new string, also with `DROP` value:
 
-```bash title="before.rules" linenums="33" hl_lines="5"
+```bash title="before.rules" linenums="33" hl_lines="6"
 # ok icmp codes for INPUT
 -A ufw-before-input -p icmp --icmp-type destination-unreachable -j DROP
 -A ufw-before-input -p icmp --icmp-type time-exceeded -j DROP
@@ -137,7 +133,6 @@ Restart the ufw:
 ufw disable && ufw enable
 ```
 
-2. 
 ```bash
 apt install net-tools
 ```
@@ -161,7 +156,7 @@ x-ui
 ## SSL Management
 
 !!! warning
-    This step is only required if you don't want to use the least secure connection. If you don't really care, move to the next step - **Setting up - Reality**.
+    This step is only required if you don't want to use the least secure connection. If you don't really care, move to the next step: [Reality](https://wiki.amdcloud.kz/3x-ui/#reality).
 
 First, let's open open `80/tcp` for some time:
 
@@ -195,7 +190,7 @@ crontab -e
 ## Setting up
 ### Reality
 
-!!! warning 
+!!! note 
     Easy, but less secure. Doesn't require SSL Management to be set up.  
 
 - Protocol: `vless`
@@ -205,9 +200,9 @@ crontab -e
 - Security: `Reality`
 - uTLS: `chrome/firefox`
 - Dest и SNI: 
-- - Sweden: `teamdocs.su`
-- - Germany: `wikiportal.su`
-- - Moscow: `docscenter.su`
+   * Sweden: `teamdocs.su`
+   * Germany: `wikiportal.su`
+   * Moscow: `docscenter.su`
 
 If port `443` is used, then:
 
