@@ -48,6 +48,7 @@
 | ----------- | ----------- |
 | [AnyDesk](https://anydesk.com/en) | AnyDesk is a powerful remote desktop software that allows users to access and control computers or devices from anywhere in the world. It is widely used for remote work, IT support, and online collaboration. The application is lightweight, fast, and secure, ensuring a seamless experience for both personal and professional use. | 
 | [RustDesk](https://github.com/rustdesk/rustdesk) | RustDesk is an open-source remote desktop software designed to provide a secure, fast, and user-friendly experience for remote access and control. Built with privacy in mind, RustDesk allows users to set up their own server for maximum security or use the default public relay and rendezvous servers. |
+| [Parsec](https://parsec.app/) | Parsec’s remote access technology powers experiences people love. Collaborating with a colleague should be as easy as going one more round in your favorite game. We’re building tools that keep you connected. |
 
 ## Tools
 | Application | Description |
