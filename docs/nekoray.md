@@ -2,10 +2,10 @@
 
 Before we begin, note that there are two installation options depending on your needs:
 
-- If you only need the proxy to work in a browser, any version of **Nekoray** will do.
-- If you need to proxy specific applications, we recommend using versions **3.24** or **3.25**.
+- If you chose [Reality](https://wiki.amdcloud.kz/3x-ui/#reality) method for your 3x-ui installation - you may use the original [Nekoray](https://github.com/MatsuriDayo/nekoray).
+- If you need to proxy specific applications, we recommend [Mahdi-zarei's nekoray fork](https://github.com/Mahdi-zarei/nekoray).
 
-This is because in version **3.26**, the "Whitelist Mode" in Tun Mode settings does not work. As a result, you won’t be able to proxy only specific applications.
+This is because no matter what version of an original [Nekoray](https://github.com/MatsuriDayo/nekoray), the "Whitelist Mode" in Tun Mode settings does not work for everyone in our team. As a result, you won’t be able to proxy only specific applications.
 
 ## Install 
 
@@ -15,7 +15,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 
 - **Nekoray for Windows (64-bit)**
 === "Latest"
-    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)
 === "3.25"
@@ -23,7 +23,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 
 - **Nekoray for linux (64-bit, archive)**
 === "Latest"
-    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)
 === "3.25"
@@ -31,7 +31,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 
 - **Nekoray for Linux (AppImage)**
 === "Latest"
-    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)
 === "3.25"
@@ -39,7 +39,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
 
 - **Nekoray for Debian/Ubuntu (64-bit, package .deb)**
 === "Latest"
-    [Download Latest](https://github.com/MatsuriDayo/nekoray/releases/latest)
+    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-debian-x64.deb)
 === "3.25"
