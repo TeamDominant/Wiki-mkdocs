@@ -3,6 +3,7 @@ site_description: Wiki and answers for most questions
 site_url: https://wiki.amdcloud.kz
 edit_uri: ""
 repo_url: https://github.com/TeamDominant/Wiki
+
 theme:
   palette:
     - media: "(prefers-color-scheme)"
@@ -43,6 +44,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -66,6 +68,7 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+
 plugins:
   - search
   - git-revision-date-localized:
@@ -74,12 +77,22 @@ plugins:
       enable_creation_date: true
       enabled: true
   - rss
+  - git-committers:
+      repository: teamdominant/wiki
+      branch: main
+      docs_path: docs/
+      cache_dir:
+        !ENV [
+          MKDOCS_PLUGIN_GIT_COMMITTERS_CACHE_DIR,
+          .cache/plugins/git-committers/,
+        ]
 
 extra:
   social:
     - icon: fontawesome/solid/rss 
       link: /feed_rss_created.xml
   homepage: https://wiki.amdcloud.kz
+
 nav:
   - Home: 
     - Start Page: index.md
