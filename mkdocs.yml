@@ -61,6 +61,11 @@ markdown_extensions:
       alternate_style: true 
   - attr_list
   - mdx_truly_sane_lists
+  - toc:
+      permalink: "#"
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 plugins:
   - search
   - git-revision-date-localized:
