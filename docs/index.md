@@ -19,6 +19,7 @@
 
 ## Server
 
+- [Askubuntu](askubuntu)
 - [Nextcloud](nextcloud)
 - [SWAG](secure)
 - [Geoblock](geoblock)

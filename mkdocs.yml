@@ -108,6 +108,7 @@ nav:
     - Nekoray: nekoray.md
     - Streisand: streisand.md
   - Server:
+    - Askubuntu: askubuntu.md
     - Nextcloud: nextcloud.md
     - SWAG: secure.md
     - Geoblock: geoblock.md
