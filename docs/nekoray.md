@@ -47,9 +47,9 @@ Here is a list of all available download links for Nekoray, categorized by opera
 
 - **Nekoray for Android**
 === "arm64-v8a"
-    [Download Latest for arm64-v8a](github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
+    [Download Latest for arm64-v8a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
 === "armeabi-v7a"
-    [Download Latest for armeabi-v7a](github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
+    [Download Latest for armeabi-v7a](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest)
 
 ## Installing Nekoray on Windows
 
