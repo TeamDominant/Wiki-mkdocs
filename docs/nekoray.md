@@ -14,7 +14,7 @@ Installing and Configuring Nekoray
 Here is a list of all available download links for Nekoray, categorized by operating system:
 
 - **Nekoray for Windows (64-bit)**
-=== "Latest"
+=== "Mahdi-zarei's fork"
     [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)
@@ -22,7 +22,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-windows64.zip)
 
 - **Nekoray for linux (64-bit, archive)**
-=== "Latest"
+=== "Mahdi-zarei's fork"
     [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)
@@ -30,7 +30,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux64.zip)
 
 - **Nekoray for Linux (AppImage)**
-=== "Latest"
+=== "Mahdi-zarei's fork"
     [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)
@@ -38,7 +38,7 @@ Here is a list of all available download links for Nekoray, categorized by opera
     [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux-x64.AppImage)  
 
 - **Nekoray for Debian/Ubuntu (64-bit, package .deb)**
-=== "Latest"
+=== "Mahdi-zarei's fork"
     [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 === "3.26"
     [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-debian-x64.deb)
