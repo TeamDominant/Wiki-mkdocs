@@ -1,5 +1,8 @@
 # Nekoray
 
+??? note "Sources"
+    [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
+
 Before we begin, note that there are two installation options depending on your needs:
 
 - If you chose [Reality](https://wiki.amdcloud.kz/3x-ui/#reality) method for your 3x-ui installation - you may use the original [Nekoray](https://github.com/MatsuriDayo/nekoray).
@@ -71,7 +74,7 @@ Step 3: Launching the Program
 
 The program works out of the box. No installation is required.
 
-## Initial Setup of Nekoray
+## Initial Setup of original Nekoray
 
 1. Core Selection:
 
@@ -103,9 +106,7 @@ Now we have three scenarios:
 
 1. If you only need to proxy the browser. This works for **any version**.
 
-2. If you need everything to be proxied, select "TUN Mode". We’ll go into more detail about configuring this below. This is **only relevant** for version **3.26**.
-
-3. This scenario involves configuring TUN Mode for specific programs. This is **only relevant** for versions **3.24** and **3.25**.
+2. If you need everything to be proxied, select "TUN Mode". We’ll go into more detail about configuring this below. This is **only relevant** for version **3.26** or older.
 
 ### Scenario 1
 
@@ -129,10 +130,9 @@ Now we have three scenarios:
 - Stack: **Mixed**  
 - MTU: **1500** (*you can leave it at 9000, but we recommend 1500*).  
 - Mode **TUN**: Turn off.  
-- Enable **Whitelist Mode** (*although in version **3.26**, it doesn’t work properly — or at all*).  
+*although in original versions of nekoray, whitelist/blocklist doesn’t work at all*   
 
 ![nekoraytunsettings](images/nekoray/nekoraysettingtun2.png)
-
 
 **Next:**
 
@@ -142,55 +142,5 @@ Now we have three scenarios:
 
 ![Nekoraytunmode](images/nekoray/nekoraytunmode.png)
 
-**Done.**
+## Initial Setup of Nekoray fork
 
-### Scenario 3
-
-1. Go to the Settings tab.
-2. Open **TUN Mode** Settings.
-3. Configure the following:  
-- Stack: `Mixed`  
-- MTU: `1500` (*you can leave it at 9000, but we recommend setting to 1500*).  
-- Mode **TUN**: `Turn off`.  
-- Enable `Whitelist Mode`.
-
-Now, in the second column, **Proxy Processes**, enter the processes you want to proxy.
-
-*Example*:  
-`Discord.exe`  
-`Updater.exe` (for Discord)   
-`firefox.exe`    
-etc.
-
-![nekoraytunsettings](images/nekoray/nekoraysettingtun1.png)
-
-**Next:** 
-
-- Right-click on the **profile**.
-- Select **Start**.
-- At the top, you will see **TUN Mode** — turn it on. You will be prompted to restart the program as **an administrator**. **Confirm**.
-
-![Nekoraytunmode](images/nekoray/nekoraytunmode.png)
-
-**Done.**
-
-### Processes of popular browsers
-
-- Google Chrome: `chrome.exe`
-
-- Yandex Browser: `browser.exe`
-
-- Mozilla Firefox: `firefox.exe`
-
-- Microsoft Edge: `msedge.exe`
-
-- Opera Browser: `opera.exe`
-
-- Safari (Windows): `safari.exe`
-
-- Brave Browser: `brave.exe`
-
-## 
-
-??? note "Source"
-    [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)

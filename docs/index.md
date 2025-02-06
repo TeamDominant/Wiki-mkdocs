@@ -12,6 +12,7 @@
 
 ## Network
 
+- [Apps](networks)
 - [3x-ui](3x-ui)
 - [Nekoray](nekoray)
 - [Streisand](streisand)
