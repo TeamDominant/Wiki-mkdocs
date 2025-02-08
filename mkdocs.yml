@@ -54,7 +54,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - footnotes
-  - pymdownx.details
+  - pymdownx.blocks.details
   - pymdownx.superfences
   - pymdownx.mark
   - pymdownx.tasklist
