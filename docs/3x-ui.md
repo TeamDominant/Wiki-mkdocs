@@ -35,11 +35,18 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 to install the panel itself
 
 4. `Would you like to customize the Panel Port settings? (If not, a random port will be applied)`
-we answer "n".
+we answer ++n++.
 
 5. Click on the link in the "Access URL" line to access our panel. Enter the credentials generated for us after the installation.
 
-6. Go to Panel Settings, then to the Authentication section, and change the login details. In the General section, specify the path to the already created Public & Private keys: /etc/ssl/certs/3x-ui.pem and /etc/ssl/certs/3x-ui.key. Scroll up, click Save, and restart the panel.
+6. Go to Panel Settings, then to the Authentication section, and change the login details. In the General section, specify the path to the already created Public & Private keys: 
+```bash title="public key"
+/etc/ssl/certs/3x-ui.pem
+```
+```bash title="private key"
+/etc/ssl/certs/3x-ui.key
+```
+Scroll up, click Save, and restart the panel.
 
 ## Securing and little tweaks
 ### Ssh
@@ -92,7 +99,7 @@ maxretry = 1
 bantime = 43200
 ```
 
-Press ctrl + x, then y, and hit enter to save and exit.
+Press ++ctrl+x++, then ++y++, and hit ++enter++ to save and exit.
 
 In the terminal, type:
 
@@ -100,7 +107,7 @@ In the terminal, type:
 x-ui
 ```
 
-Type 20 (IP Limit Management) and press Enter. Then press 1 to install and type y.
+Type 20 (IP Limit Management) and press ++enter++. Then press 1 to install and type ++y++.
 
 ### Ufw
 
@@ -125,7 +132,7 @@ Change the values from `ACCEPT` to `DROP` and add new string, also with `DROP` v
 -A ufw-before-forward -p icmp --icmp-type echo-request -j DROP
 ```
 
-ctrl + x, y and enter.
+Press ++ctrl+x++, then ++y++, and hit ++enter++ to save and exit.
 
 Restart the ufw:
 
