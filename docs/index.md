@@ -5,29 +5,29 @@
 
 ## Software
 
-- [Apps](apps)
-- [Discord](discord)
-- [Firefox](firefox)
-- [Telegram](telegram)
+- [Apps](apps.md)
+- [Discord](discord.md)
+- [Firefox](firefox.md)
+- [Telegram](telegram.md)
 
 ## Network
 
-- [Apps](networks)
-- [3x-ui](3x-ui)
-- [Nekoray](nekoray)
-- [Streisand](streisand)
+- [Apps](network.md)
+- [3x-ui](3x-ui.md)
+- [Nekoray](nekoray.md)
+- [Streisand](streisand.md)
 
 ## Server
 
-- [Askubuntu](askubuntu)
-- [Nextcloud](nextcloud)
-- [SWAG](secure)
-- [Geoblock](geoblock)
-- [Jfscan](jfscan)
+- [Askubuntu](askubuntu.md)
+- [Nextcloud](nextcloud.md)
+- [SWAG](secure.md)
+- [Geoblock](geoblock.md)
+- [Jfscan](jfscan.md)
 
 ## Other
 
-- [iPhone](iphone)
-- [Nothing Phone](nothing) 
-- [Wush](wush)
-- [Archlinux](arch)
+- [iPhone](iphone.md)
+- [Nothing Phone](nothing.md) 
+- [Wush](wush.md)
+- [Archlinux](arch.md)
