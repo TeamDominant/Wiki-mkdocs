@@ -37,8 +37,6 @@ theme:
   custom_dir: overrides
   favicon: images/favicon.png
   logo: images/logo.png
-  font:
-    code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
   font:
