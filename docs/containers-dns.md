@@ -11,7 +11,7 @@ The issue is that all dns queries by the server and all containers are grouped i
 
 ## Solution
 
-![Container DNS](images/container-dns/containers-dns.png)
+![Container DNS](images/containers-dns/containers-dns.png)
 
 Create an adguardhome container for all the other containers to use as their DNS, and set the host as the upstream DNS for reverse lookups, so that container names will be displayed instead of IPs.
 
