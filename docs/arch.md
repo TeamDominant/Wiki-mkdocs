@@ -1,16 +1,6 @@
 # Arch Linux
 
-## Arch Fun: From Installing the System to Useful Programs
-
-*Arch Linux* is an independently developed `x86-64` GNU/Linux distribution designed for general purposes. It aims to provide the latest stable versions of most software, adhering to a rolling release model. Arch is installed as a minimal base system and is configured by the user to meet their specific needs, allowing the creation of a unique environment by installing only the necessary components.
-
-Essentially, it’s a blank slate, running on the Linux kernel and equipped with a basic set of commands. It ships without a GUI (Graphical User Interface).
-
-To put it simply: Arch is for *gentlemen*, while Ubuntu is for the *mainstream crowd* who want everything handed to them on a silver platter.
-
-This guide will be updated and expanded over time — stay tuned! 
-
-### Preparation of Installation Image
+## Preparation of Installation Image
 !!! note
     We want to emphasize that Linux systems can be installed almost anywhere: on a desktop, a laptop, a USB drive, or even a phone (if the distribution supports it). The installation process is roughly the same, but there are differences that need to be understood. For example, when installing Arch Linux as a second system, you'll need to manually configure efibootmgr. Additionally, there are differences in setting up dual boot on a machine with BIOS versus UEFI.
 That's why guides will repeat certain steps to avoid creating confusion with too many "If you have BIOS, do this…" and "If you have UEFI, do that…" instructions scattered throughout.
@@ -56,21 +46,25 @@ Now, we can boot from the USB. When the machine boots from the USB, you'll see a
 
 ![start_arch](images/arch/Arch_install1.png)
 
-## Installation with dual-boot
+## Installation
 
-### 1. Network settings
+### Network settings
 
 Setting Up a Wireless Network
 
 If you are connected via a wired connection, simply check if it works using the following command:
 
-    ping archlinux.org
+```bash
+ping archlinux.org
+```
 
 If you get a response, everything is fine. If not, it means the required service didn't start. Try restarting the machine or re-creating the installation image. We will use the iwctl utility.
 
 Execute the command:
 
-    iwctl
+```bash
+iwctl
+```
 
 ![iwctl](images/arch/iwctl_settings.png)
 
@@ -79,40 +73,52 @@ Then enter the following commands:
 
 1. List available wireless devices:
 
-    device list
+```bash
+device list
+```
 
 *Identify the name of your wireless device (e.g., wlan0).*
 
 2. Scan for available networks:
 
-    station <device_name> scan
+```bash
+station wlan0 scan
+```
 
 3. View the list of available networks:
 
-    station <device_name> get-networks
+```bash
+station wlan0 get-networks
+```
 
 4. Connect to a Wi-Fi network:
 
-    station <device_name> connect <SSID>
+```bash
+station wlan0 connect {network}
+```
 
 *After this command, you will need to enter the password if the network is secured.*
 
 5. Check the connection status:
 
-    station <device_name> show
+```bash
+station wlan0 show
+```
 
 Ensure the network is connected.
 
-    ping archlinux.org
+```bash
+ping archlinux.org
+```
 
-### 2. Disk Partitioning
+### Disk Partitioning
 
 There are two utilities for disk partitioning:
 
 - **fdisk**
 - **cfdisk**
 
-In my opinion, `cfdisk` is simpler to use and more user-friendly for inexperienced users. We will use it.
+We gonna use `fdisk`, which is simpler to use and more user-friendly for inexperienced users.
 
 First, let's determine the name of our disk.
 
@@ -121,82 +127,46 @@ First, let's determine the name of our disk.
 
 Use the following command to determine the name of your disk:
 
-    lsblk
+```bash
+fdisk -l
+```
 
-This will output a list of connected disks.
+This will output a list of connected disks. 
 
-![lsblk](images/arch/lsblk1.png)
+Run the following command to configure your disk:  
 
-!!! note
-    That the disk must be in GPT format. If the disk is new, when launching cfdisk, we will be prompted to choose a format for the disk. Select GPT.  
-
-Run the following command:  
-
-    cfdisk /dev/sda
-
-After launching *cfdisk*, you will see a menu for creating partitions. Navigation is done using the arrow keys (Up and Down to select a partition, Left and Right to choose a button for execution). The Enter key is used for confirmation. At the bottom, you will see buttons such as New, Quit, etc. Free space will be highlighted in green.  
-
-1. Press `New`.
-2. Enter the amount of memory you need (make sure to specify the unit: **G** for gigabytes, **M** for megabytes).
-3. Press **Enter** .
-4. Next, select `Type` for the partition.
+```bash
+fdisk /dev/nvme0n1
+```
 
 We need to create three partitions:
 
 | Partition |   Size          | Type              |
 | :---      |     :---:       |              ---: |
-| boot      | 700M            |  Efi-system       |
+| boot      | 1G              |  Efi-system       |
 | swap      | 8G              |  linux swap       |
 | root      | Remaining space |  linux filesystem | 
 
+Press ++p++ to list partitions in selected disk, if any exists.
+
+Press ++n++ to create a new partition. Partition numbers should be left as default. Leave the **First sector** as default by pressing ++enter++ and allocate `+1G` for **Last sector**. We just created `boot` partition.
+
+Do same steps for `swap` by allocating 4-8G (if you want) and all remaining space for `root`.
 
 !!! IMPORTANT
     SWAP is the swap partition; it is recommended to include it if your machine has less than 8 GB of RAM.
 
-![cfdisk](images/arch/cfdisk.png)
+After creating all partitions, press ++w++ to apply the changes.
 
-After creating all partitions and selecting their `Type`, press `Write` and type `YES` to confirm. Quit.
-
-**Now, let's format and mount the partitions.**
-
-!!! IMPORTANT
-    We are using a disk named `sda` with partitions `sda1`, `sda2`, `sda3`. These names may be different, up to `nvme0n1` with partitions `nvme0n1p1`, `nvme0n1p2`, and so on.
-
-**EFI System:**
-
-    mkfs.fat -F32 /dev/sda1
-
-**Swap:**
-
-    mkswap /dev/sda2
-    swapon /dev/sda2
-
-**Linux filesystem:**
-
-    mkfs.ext4 /dev/sda3
-
-Once everything is formatted, it's time to mount it.
-
-**EFI:**
-
-    mkdir /mnt/boot
-    mount /dev/sda1 /mnt/boot
-
-**Linux filesystem:**
-
-    mount /dev/sda3 /mnt
-
-Check `lsblk`
-
-![final_lsblk](images/arch/finish_lsblk.png)
-
-### 3. Installing
+### Archinstall
 
 Okay, we’re done with partitioning the disk. Now, let’s proceed with installing Arch with all the components.
 
 **Enter** and **wait**:
 
-    archinstall   
+```bash
+archinstall   
+```
 
 We will be greeted with the following menu.
 
@@ -208,30 +178,29 @@ Let's go step by step through the process of installing Arch Linux using the ins
 
 *Here, you can add the language to be used in the system.*
 
-- Select Locale language and search for the desired language. I choose `ru_RU`.
+- Select Locale language and search for the desired language. You may choose `ru_RU` if you need so.
 
 !!! Note 
     To quickly search, you can press ? and type the language you need, such as en or ru.
 
- 
 **Disk configuration**
 
-- Select `Partitioning`.
+- Select `Manual Partitioning`.
 
-- Choose `Pre-mounted configuration`.
+- Choose your disk, in our case `nvme0n1`.
 
-- Type `/mnt`.
+- Select 1G partition. Assing mountpoint: `/boot`. Select mark/unmark to be formatted. Change filesystem to `fat32`.
 
-- Press **Enter**.
+- Select partition with all remaining disk space. Assing mountpoint: `/`. Select mark/unmark to be formatted. Change filesystem to `ext4`.
 
+- Press `Confirm and exit`.
 
 **Bootloader**
 
 - Select `GRUB`
 
-
 **Hostname**
-    
+
 *Name is used as the computer’s network name*.
 
 - Enter the **name** for your system (you can leave it as archlinux).
@@ -241,7 +210,6 @@ Let's go step by step through the process of installing Arch Linux using the ins
 *Set a password for the root user*.
 
 - Enter the **password** and **confirm it**.
-    
 
 **User account**
 
@@ -255,8 +223,6 @@ Let's go step by step through the process of installing Arch Linux using the ins
 
 - Select `Yes` to confirm.
 
-    
-
 **Profile**
 
 *Choose a GUI for your Arch installation*.
@@ -267,41 +233,25 @@ Let's go step by step through the process of installing Arch Linux using the ins
 
 - Choose `KDE plasma`.
 
-Choose a desktop environment that suits you. For beginners, it is recommended to choose **KDE Plasma**.
+- Choose `sddm`
 
-*You will be redirected to the next menu*.
+Choose a desktop environment that suits you. It is recommended to choose **KDE Plasma**.
 
-*Choose the appropriate Graphics driver based on your system configuration*:
+You will be redirected to the next menu.
 
-- `AMD/ATI` for AMD graphics cards.
-    
-- `Intel` for integrated graphics in Intel processors.
-    
-- `Nvidia (open-source/kernel, proprietary)` for Nvidia graphics cards.
-    
-- `VMware/VirtualBox` for virtual machines.
-
-!!! Recommendation
-    In the case of Nvidia, it’s recommended to research the difference between open-source/kernel and proprietary drivers and choose the one that suits you best.
-
-*After selecting the driver, return to the main menu*.
+You may choose the appropriate Graphics driver based on your system configuration, but leave as default (All).
 
 **Network configuration**
 
 - Choose `Use NetworkManager`
 
-    
 **Additional packages**
 
 *Add additional programs that you might find useful*.
 
 For now, let’s add:
-    
-    nano
 
-!!! Note
-    You can also add additional software like neofetch, firefox, htop, etc., but you can always add them later after the installation.
-
+`nano firefox btop`
 
 **Timezone**
 
@@ -310,6 +260,9 @@ For now, let’s add:
 !!! Note
     For quick search, press ? and type your desired time zone.
 
+**Audio**
+
+Select `pipewire`.
 
 **Installing Arch**
 
@@ -319,58 +272,81 @@ Then select `Yes` and wait for the installation to complete.
 
 Once the installation is complete. After the installation is complete, we are prompted to continue the setup in chroot. Select `Yes`.
 
-### 4. GRUB configuration
+### GRUB configuration
 
-*Now, let's set up dual-boot*. 
+*Now, let's set up grub*. 
 
-Enter the following command:
+As we can see there is not arch in boot manager by running the command:
 
-    pacman -Sy efibootmgr dosfstools mtools
+```bash
+efibootmgr
+```
 
-You will be asked if you want to continue the installation. Press **Enter** to proceed.
+Modify the configuration:
 
-Next, enter the following command:
+```bash
+grub-install --target=x86_64-efi --efi-directory=/boot --recheck
+```
 
-    grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+If successful, `Installation finished. No errors reported` will appear.
 
-If the installation is successful, you will see:
+Re-check as arch entry had to appear:
 
-    Installation finished. No error reported.
+```bash
+efibootmgr
+```
 
-Now, generate the GRUB configuration file with:
+Finally: 
+```bash
+reboot
+```
 
-    grub-mkconfig -o /boot/grub/grub.cfg
+## Dual-boot
 
-Reboot the system:
+If you need to add Windows boot entry for dual-boot, firstly enter root user:
 
-    Reboot
+```bash
+sudo su
+```
 
-After booting into the system, open the terminal (in KDE, the pre-installed terminal is Konsole).
+Install OS-prober:
 
-*We need to uncomment one line and modify another in GRUB’s configuration settings.*
+```bash
+pacman -S os-prober
+```
 
-Open the GRUB configuration file:
+Edit grub config:
 
-    nano /etc/default/grub
+```bash
+nano /etc/default/grub
+```
 
-At the top, you will see the parameter GRUB_TIMEOUT.
-This controls the time (in seconds) GRUB waits before booting the default OS.
-You can leave it as is or set a custom value, for example:
+Scroll to the bottom and uncomment the following
 
-    GRUB_TIMEOUT=10
+```bash title="grub" hl_lines="3"
+#GRUB_SAVEDEFAULT=true
+#GRUB_DISABLE_SUBMENU=y
+GRUB_DISABLE_OS_PROBER=false
+```
 
-Scroll down to the bottom and find the line:
+Press ++ctrl+x++, ++y++ and ++enter++.
 
-    #GRUB_DISABLE_OS_PROBER=false
+Now you need to check the Windows Boot manager entry:
 
-Uncomment it by removing the # at the beginning:
+```bash
+os-prober
+```
 
-    GRUB_DISABLE_OS_PROBER=false
+Generate grub configuration file:
 
-Save the changes:
+```bash
+grub-mkcofnig -o /boot/grub/grub.cfg
+```
 
-- Press CTRL+O to save.
-- Press Enter to confirm.
-- Press CTRL+X to exit.
+Should be good to good, if debug messages say so.
 
-Well done, bro. You install Arch linux on your PC.
+The REAL final reboot:
+
+```bash
+reboot
+```

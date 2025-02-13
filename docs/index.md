@@ -28,7 +28,7 @@
 
 ## Other
 
+- [Archlinux](arch.md)
 - [iPhone](iphone.md)
 - [Nothing Phone](nothing.md) 
 - [Wush](wush.md)
-- [Archlinux](arch.md)
