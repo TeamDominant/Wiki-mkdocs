@@ -72,3 +72,11 @@
 | Application | Description |
 | ----------- | ----------- |
 | [Audacity](https://www.audacityteam.org/) | Audacity is a free, open-source, and cross-platform audio editing software widely used for recording, editing, and processing audio files. Available on Windows, macOS, and Linux, Audacity is popular among podcasters, musicians, sound engineers, and anyone who needs a versatile tool for working with audio. It provides a comprehensive set of features for both basic and advanced audio editing, making it suitable for beginners and professionals alike. |
+
+# Network
+
+| Application | Description |
+| ----------- | ----------- |
+| [3x-ui](https://wiki.amdcloud.kz/3x-ui/) | Xray panel supporting multi-protocol multi-user expire day & traffic & IP limit (Vmess & Vless & Trojan & ShadowSocks & Wireguard). |
+| [Nekoray](https://wiki.amdcloud.kz/nekoray/) | Qt based cross-platform GUI proxy configuration manager (backend: sing-box). |
+| [Marzban](https://wiki.amdcloud.kz/marzban/) | Unified GUI Censorship Resistant Solution Powered by Xray. |

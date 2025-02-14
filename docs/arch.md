@@ -350,3 +350,12 @@ The REAL final reboot:
 ```bash
 reboot
 ```
+
+## Linux goodies
+
+| Application | Description |
+| ----------- | ----------- |
+| [Blue Screen of Life](https://github.com/harishnkr/bsol) | Menu styled like the Windows Blue Screen of Death, but family-friendly | 
+| [Arch Linux Gangster Edition Plymouth theme](https://github.com/dj-no/arch-gangster-edition-plymouth?tab=readme-ov-file) | Windows XP boot screen styled as gangsta. You a real gangsta, bro? | 
+| [macOS Boot Splash Style](https://www.pling.com/p/2106821) | Apple minimalism at its finest. Trendy and stylish | 
+| [Plymouth Themes](https://www.pling.com/p/2216301) | A pack of multiple boot animations |

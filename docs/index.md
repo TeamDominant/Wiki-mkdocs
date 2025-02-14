@@ -12,7 +12,6 @@
 
 ## Network
 
-- [Apps](network.md)
 - [3x-ui](3x-ui.md)
 - [Nekoray](nekoray.md)
 - [Streisand](streisand.md)
