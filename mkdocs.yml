@@ -71,7 +71,7 @@ plugins:
   - search
   - social:
       cards_layout_options:
-          background_color: "#1e2129"
+          background_color: "#1E2129"
   - git-revision-date-localized:
       type: timeago
       fallback_to_build_date: true
