@@ -72,6 +72,7 @@ plugins:
   - social:
       cards_layout_options:
           background_color: "#1E2129"
+          background_image: layouts/amdcloud.png
   - git-revision-date-localized:
       type: timeago
       fallback_to_build_date: true
