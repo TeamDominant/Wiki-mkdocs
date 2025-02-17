@@ -144,3 +144,47 @@ Now we have three scenarios:
 
 ## Initial Setup of Nekoray fork
 
+### Black and White list
+
+**Black list**
+
+Go to Settings -> Route Settings -> Route 
+
+Select `Default` and click `Edit`
+
+Click `New` and rename new Rules
+
+In the **Name** field, you can enter any name you want. In the **Attribute** field, select `process_name`. In **Outbound**, choose `direct`.
+
+![nekoray_fork_route](images/Nekorayfork/nekoray_fork_route.png)
+
+
+In the bottom left field, enter the process you do not want to proxy. Process names can be found in the Task Manager under the Details tab.
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_addprocess.png)
+
+!!! ALERT
+    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
+
+
+
+**White list**
+
+Go to Settings -> Route Settings -> Route
+
+Click `New`, write name for your new Route in field **Name**
+
+Add **new** Rule. Select **Attribute** -> `process_name` and **Outbound** -> `proxy`
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_whitelist.png) 
+
+In the left field, enter the processes you want to proxy.
+
+!!! ALERT
+    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
+
+Save the settings, and then in the route settings, under **General**, select our profile in **Routing Profile**, and set **Outbound** to `direct`.
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_routesetting.png) 
+
+Done
