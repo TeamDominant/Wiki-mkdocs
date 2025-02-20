@@ -187,6 +187,10 @@ Enter your domain, default port - 80, wait until the certificate is created and 
 Leave port `80/tcp` is not secure, so let's make a crontab for it:
 
 ```bash
+timedatectl set-timezone Europe/Moscow
+```
+
+```bash
 crontab -e
 ```
 
