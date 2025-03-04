@@ -1,6 +1,6 @@
 # Nekoray
 
-??? note "Sources"
+??? Sources
     [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
 Before we begin, note that there are two installation options depending on your needs:
@@ -144,9 +144,7 @@ Now we have three scenarios:
 
 ## Initial Setup of Nekoray fork
 
-### Black and White list
-
-**Black list**
+### Blocklist
 
 Go to Settings -> Route Settings -> Route 
 
@@ -158,17 +156,16 @@ In the **Name** field, you can enter any name you want. In the **Attribute** fie
 
 ![nekoray_fork_route](images/Nekorayfork/nekoray_fork_route.png)
 
-
 In the bottom left field, enter the process you do not want to proxy. Process names can be found in the Task Manager under the Details tab.
 
 ![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_addprocess.png)
 
-!!! ALERT
+!!! warning
     It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
 
 
 
-**White list**
+## Whitelist
 
 Go to Settings -> Route Settings -> Route
 
@@ -180,11 +177,9 @@ Add **new** Rule. Select **Attribute** -> `process_name` and **Outbound** -> `pr
 
 In the left field, enter the processes you want to proxy.
 
-!!! ALERT
+!!! warning
     It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
 
 Save the settings, and then in the route settings, under **General**, select our profile in **Routing Profile**, and set **Outbound** to `direct`.
 
-![nekoray_fork_addprocess](images/Nekorayfork/nekoray_routesetting.png) 
-
-Done
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_routesetting.png)
