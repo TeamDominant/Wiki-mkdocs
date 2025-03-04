@@ -1,6 +1,6 @@
 # Hachestic RP
 
-## Tables
+## Cheat-sheets
 
 - [Свалка Авто](https://docs.google.com/spreadsheets/d/1DtKOEIQe2MLZxrzdKf8-YMIkZYQyeDb8pKB8jcz4BoI/edit#gid=1338230962)
 - [Скорость и Тюнинг](https://docs.google.com/spreadsheets/d/1lR3Ms3Lv4iarFd0zrpRIlZ1ipaa-1pDTtEkwlpnDO_s/edit#gid=0)
@@ -12,7 +12,7 @@
 - [Университет](https://images-ext-1.discordapp.net/external/9ZzNrwquCCw1xm9RpqU4jXlQ4NMOmbUDyAF3fsoD3hs/https/multibot.pro/api/embeds/images/drjp0y210fnee1si?format=webp&width=1920&height=516)
 
 
-## Guids
+## Guides
 
 - [Деморган](https://youtu.be/2-aQQbGKTZY)
 - [Дальнобойщик](https://www.youtube.com/watch?v=qgQzmrzu-cQ)
@@ -30,40 +30,34 @@
 - [Рыбалка](https://youtu.be/ejtGhAmPMec)
 
 
-## Good Info
+## Useful information
 
 - [Карта с инфой](https://youtu.be/tvhKagpMGRY)
-- [Wiki Majestic](https://wiki.majestic-rp.ru/)
+- [Majestic Wiki](https://wiki.majestic-rp.ru/)
 
 
-## Redux Install
+## Redux installation
 
-1. 
-Скачиваем любой редукс.
+1. Скачиваем любой редукс.
 
-Примеры:
-
+Примеры:  
 - [Drain V3](https://drive.google.com/drive/folders/1FVPkq57NDF8y-KRUrZ8d177KXGRekE3P?usp=sharing)
 
-2.
-Распаковываем архив.
+2. Распаковываем архив.
 
-3.
-Открываем папку с игрой и открываем папку update.
+3. Открываем папку с игрой и открываем папку update.
 
 !!! warning
-    Редукс не будет работать если игра установлена через **Rockstar Games**
+    Редукс не будет работать если игра установлена через **Rockstar Games**.
 
-4.
-Перекидываем скаченый файл update.rpf с заменой.
+4. Перекидываем скаченый файл update.rpf с заменой.
 
-### Edit Redux
+### Redux configuration
 
 Скачиваем OpenVI и ArchiveFix
 
 - [OpenVI](https://openiv.com/)
 - [ArchiveFix](https://drive.google.com/file/d/1X6X8CBJaUSqpIT-fr0JbEHUPUr_GzVEk/view?usp=sharing)
 
-**OpenVI** - Нужен для редактирование и замены файлов
-
+**OpenVI** - Нужен для редактирование и замены файлов  
 **ArchiveFix** - Нужен чтобы игра не сломалась после изменений
