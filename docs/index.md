@@ -29,5 +29,6 @@
 
 - [Archlinux](arch.md)
 - [iPhone](iphone.md)
+- [Majestic](majestic.md)
 - [Nothing Phone](nothing.md) 
 - [Wush](wush.md)

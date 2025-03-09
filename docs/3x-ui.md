@@ -1,14 +1,14 @@
 # 3x-ui
 
 !!! danger
-    Don't pay for the "private" guides, no one will tell you anything more, because there is no more functionality.
+    This page is under the complete re-write.
 
 ## Setup used
 
 The setup was used in my case:
 
 - OS: Ubuntu 22.04.5
-- 3x-ui Version: 2.4.11
+- 3x-ui Version: 2.5.3
 - VPS: [Aéza](https://aeza.net/?ref=572663)
 
 ## Installation
@@ -20,6 +20,12 @@ As soon as we log into the system after purchasing a VPS, we execute the followi
 apt update && apt upgrade -y
 ```
 to install all updates
+
+if your system is minimized by default, unminimize it
+
+```bash
+unminimize && apt update && apt upgrade -y && apt autoclean -y && apt clean -y && apt autoremove -y && reboot
+```
 
 2. 
 ```bash 
@@ -35,7 +41,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 to install the panel itself
 
 4. `Would you like to customize the Panel Port settings? (If not, a random port will be applied)`
-we answer ++n++.
+we answer with ++n++.
 
 5. Click on the link in the "Access URL" line to access our panel. Enter the credentials generated for us after the installation.
 
@@ -85,8 +91,12 @@ systemctl restart ssh
 apt install fail2ban -y && apt install ufw -y
 ```
 
-After runnig `touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local`
-Copy and paste (ctrl + shift + v):
+Right after the packages got installed, create and edit fail2ban jail config
+```bash
+touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local`
+```
+
+Copy and paste the following ++ctrl+shift+v++
 
 ```bash title="jail.local"
 [sshd]
@@ -112,24 +122,19 @@ Type 20 (IP Limit Management) and press ++enter++. Then press 1 to install and t
 ### Ufw
 
 ```bash
-nano /etc/ufw/before.rules
+nano /etc/ufw/sysctl.conf
 ```
 
-Change the values from `ACCEPT` to `DROP` and add new string, also with `DROP` value:
+Change the value in the following string from `0` to `1`, so services can't two way ping your server
 
-```bash title="before.rules" linenums="33" hl_lines="6"
-# ok icmp codes for INPUT
--A ufw-before-input -p icmp --icmp-type destination-unreachable -j DROP
--A ufw-before-input -p icmp --icmp-type time-exceeded -j DROP
--A ufw-before-input -p icmp --icmp-type parameter-problem -j DROP
--A ufw-before-input -p icmp --icmp-type echo-request -j DROP
--A ufw-before-input -p icmp --icmp-type source-quench -j DROP
+!!! warning
+    The following can't be applied to Aeza's servers. Why? Aeza. However, I got this working for some days on Vienna/Finland machines.
 
-# ok icmp code for FORWARD
--A ufw-before-forward -p icmp --icmp-type destination-unreachable -j DROP
--A ufw-before-forward -p icmp --icmp-type time-exceeded -j DROP
--A ufw-before-forward -p icmp --icmp-type parameter-problem -j DROP
--A ufw-before-forward -p icmp --icmp-type echo-request -j DROP
+```bash title="sysctl.conf" hl_lines="4"
+# Ignore bogus ICMP errors
+net/ipv4/icmp_echo_ignore_broadcasts=1
+net/ipv4/icmp_ignore_bogus_error_responses=1
+net/ipv4/icmp_echo_ignore_all=1
 ```
 
 Press ++ctrl+x++, then ++y++, and hit ++enter++ to save and exit.
@@ -185,6 +190,10 @@ and then select **SSL Management (18)**. Press **1** to **Get SSL**.
 Enter your domain, default port - 80, wait until the certificate is created and then agree to set certificate for the panel.
 
 Leave port `80/tcp` is not secure, so let's make a crontab for it:
+
+```bash
+timedatectl set-timezone Europe/Moscow
+```
 
 ```bash
 crontab -e
