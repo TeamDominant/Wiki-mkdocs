@@ -8,7 +8,7 @@
 The setup was used in my case:
 
 - OS: Ubuntu 22.04.5
-- 3x-ui Version: 2.5.3
+- 3x-ui Version: 2.5.4
 - VPS: [Aéza](https://aeza.net/?ref=572663)
 
 ## Installation
@@ -19,10 +19,8 @@ As soon as we log into the system after purchasing a VPS, we execute the followi
 ```bash
 apt update && apt upgrade -y
 ```
-to install all updates
-
+to install all updates  
 if your system is minimized by default, unminimize it
-
 ```bash
 unminimize && apt update && apt upgrade -y && apt autoclean -y && apt clean -y && apt autoremove -y && reboot
 ```
@@ -55,6 +53,39 @@ we answer with ++n++.
 Scroll up, click Save, and restart the panel.
 
 ## Securing and little tweaks
+
+### Xanmod Kernel
+
+1. Check the version you need to install
+
+```bash
+wget https://dl.xanmod.org/check_x86-64_psabi.sh
+chmod +x check_x86-64_psabi.sh
+./check_x86-64_psabi.sh
+```
+
+2. Register the PGP key
+
+```bash
+wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -vo /etc/apt/keyrings/xanmod-archive-keyring.gpg
+```
+
+3. Add the repo
+
+```bash
+echo 'deb [signed-by=/etc/apt/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
+```
+
+4. Update and install the version checked suggested you to install
+
+```bash
+sudo apt update && sudo apt install linux-xanmod-x64v3
+```
+
+5. If you didn't, apply the bbr config via `x-ui` or something. No need to do it, if you've done previously 
+
+6. Reboot
+
 ### Ssh
 
 Changing ssh port is required since ISPs scan for open ports and trying to detect such VPS machine, which you use as proxy.
@@ -93,7 +124,7 @@ apt install fail2ban -y && apt install ufw -y
 
 Right after the packages got installed, create and edit fail2ban jail config
 ```bash
-touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local`
+touch /etc/fail2ban/jail.local && nano /etc/fail2ban/jail.local
 ```
 
 Copy and paste the following ++ctrl+shift+v++
@@ -101,12 +132,11 @@ Copy and paste the following ++ctrl+shift+v++
 ```bash title="jail.local"
 [sshd]
 enabled = true
-filter = sshd
-action = iptables[name=SSH, port=ssh, protocol=tcp]
-logpath = /var/log/auth.log
-findtime = 600
+chain   = INPUT
+action  = iptables-allports
+bantime = 1209600
 maxretry = 1
-bantime = 43200
+logpath = /config/log/sshd/auth.log
 ```
 
 Press ++ctrl+x++, then ++y++, and hit ++enter++ to save and exit.
@@ -148,6 +178,7 @@ ufw disable && ufw enable
 ```bash
 apt install net-tools
 ```
+
 ```bash
 netstat -ntlp | grep LISTEN
 ```
@@ -287,6 +318,16 @@ After its all done we need to close port `80/tcp`:
 
 ```bash
 ufw deny 80/tcp
+```
+
+### cortez24rus's script
+
+Follow the instructions on the repo [page](https://github.com/cortez24rus/xui-reverse-proxy).
+
+and run the script itself after you've done the requirements.
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/cortez24rus/xui-reverse-proxy/refs/heads/main/reverse_proxy.sh)
 ```
 
 ## Clean-up
