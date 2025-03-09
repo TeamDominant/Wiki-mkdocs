@@ -110,6 +110,7 @@ nav:
     - Streisand: streisand.md
   - Server:
     - Askubuntu: askubuntu.md
+    - Cointainers DNS: container-dns.md
     - Nextcloud: nextcloud.md
     - Scripts: scripts.md
     - SWAG: secure.md
