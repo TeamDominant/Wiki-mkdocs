@@ -206,10 +206,10 @@ crontab -e
 - Email = `email` or `username`
 - Security: `Reality`
 - uTLS: `chrome/firefox`
-- Dest и SNI: 
-   * Sweden: `teamdocs.su`
-   * Germany: `wikiportal.su`
-   * Moscow: `docscenter.su`
+- Dest & SNI: 
+   * Sweden / Finland: `teamdocs.su:443`
+   * Germany: `wikiportal.su:443`
+   * Moscow: `docscenter.su:443`
 
 If port `443` is used, then:
 
