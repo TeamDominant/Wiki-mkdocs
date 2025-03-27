@@ -1,14 +1,14 @@
 # 3x-ui
 
 !!! danger
-    This page is under the complete re-write.
+    This page is no longer supported. Please, migrate to Remnawave.
 
 ## Setup used
 
 The setup was used in my case:
 
-- OS: Ubuntu 22.04.5
-- 3x-ui Version: 2.5.4
+- OS: Ubuntu 24.04.1
+- 3x-ui Version: 2.5.6
 - VPS: [Aéza](https://aeza.net/?ref=572663)
 
 ## Installation
@@ -29,7 +29,7 @@ unminimize && apt update && apt upgrade -y && apt autoclean -y && apt clean -y &
 ```bash 
 openssl req -x509 -keyout /etc/ssl/certs/3x-ui.key -out /etc/ssl/certs/3x-ui.pem -newkey rsa:4096 -sha256 -days 3650 -nodes -new
 ```
-where .pem is the public key, and .key is the private key.
+where `.pem` is the public key, and `.key` is the private key.
 Just keep pressing Enter, no need to fill anything in.
 
 3. 
@@ -57,7 +57,6 @@ Scroll up, click Save, and restart the panel.
 ### Xanmod Kernel
 
 1. Check the version you need to install
-
 ```bash
 wget https://dl.xanmod.org/check_x86-64_psabi.sh
 chmod +x check_x86-64_psabi.sh
@@ -65,19 +64,16 @@ chmod +x check_x86-64_psabi.sh
 ```
 
 2. Register the PGP key
-
 ```bash
 wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -vo /etc/apt/keyrings/xanmod-archive-keyring.gpg
 ```
 
 3. Add the repo
-
 ```bash
 echo 'deb [signed-by=/etc/apt/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
 ```
 
 4. Update and install the version checked suggested you to install
-
 ```bash
 sudo apt update && sudo apt install linux-xanmod-x64v3
 ```
@@ -136,7 +132,7 @@ chain   = INPUT
 action  = iptables-allports
 bantime = 1209600
 maxretry = 1
-logpath = /config/log/sshd/auth.log
+logpath = /var/log/auth.log
 ```
 
 Press ++ctrl+x++, then ++y++, and hit ++enter++ to save and exit.
@@ -158,7 +154,7 @@ nano /etc/ufw/sysctl.conf
 Change the value in the following string from `0` to `1`, so services can't two way ping your server
 
 !!! warning
-    The following can't be applied to Aeza's servers. Why? Aeza. However, I got this working for some days on Vienna/Finland machines.
+    This step is optional and should be only done if you really need to do so. In 99% cases this affects nothing.
 
 ```bash title="sysctl.conf" hl_lines="4"
 # Ignore bogus ICMP errors
@@ -221,10 +217,6 @@ and then select **SSL Management (18)**. Press **1** to **Get SSL**.
 Enter your domain, default port - 80, wait until the certificate is created and then agree to set certificate for the panel.
 
 Leave port `80/tcp` is not secure, so let's make a crontab for it:
-
-```bash
-timedatectl set-timezone Europe/Moscow
-```
 
 ```bash
 crontab -e
