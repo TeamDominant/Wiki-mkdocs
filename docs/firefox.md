@@ -51,3 +51,5 @@ user_pref("browser.tabs.hoverPreview.enabled", false);
 
 ## Modifications for other platforms
 - [Fennec](https://f-droid.org/packages/org.mozilla.fennec_fdroid/) (F-droid)
+- [Zen](https://github.com/zen-browser/desktop) (desktop)
+- [Floorp](https://github.com/Floorp-Projects/Floorp) (desktop)
