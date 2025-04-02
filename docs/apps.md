@@ -4,8 +4,9 @@
 
 | Application | Description |
 | ----------- | ----------- |
-| [Firefox](https://www.mozilla.org/en-US/) | [Firefox](https://www.mozilla.org/en-US/) Firefox is a free and open-source web browser developed by Mozilla. Known for its speed, privacy-focused features, and customizability, it provides users with a secure and efficient browsing experience across multiple platforms, including Windows, macOS, Linux, and mobile devices. [Betterfox](https://github.com/TeamDominant/Betterfox) installation is required for better experience. |  
+| [Firefox](https://www.mozilla.org/en-US/) | Firefox is a free and open-source web browser developed by Mozilla. Known for its speed, privacy-focused features, and customizability, it provides users with a secure and efficient browsing experience across multiple platforms, including Windows, macOS, Linux, and mobile devices. [Betterfox](https://github.com/TeamDominant/Betterfox) installation is required for better experience. |  
 | [Betterfox](https://github.com/TeamDominant/Betterfox) | Firefox user.js for speed, privacy, and security. Your favorite browser, but better. [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) fork and improved for personal preferences. |  
+| [Zen](https://github.com/zen-browser/desktop) | Zen is a beautifully designed, privacy-focused, and packed with features browser based of Firefox and incorporates enhancements from [Betterfox](https://github.com/yokoffing/Betterfox). |
 | [Floorp](https://github.com/Floorp-Projects/Floorp) | Floorp is a modern, open-source browser designed for users who value speed, privacy, and convenience. Floorp incorporates enhancements from [Betterfox](https://github.com/yokoffing/Betterfox), bringing an extra layer of performance tuning and privacy improvements. |  
 
 ## SSH
@@ -13,7 +14,7 @@
 | Application | Description |
 | ----------- | ----------- |
 | [PuTTY](https://www.putty.org/) | PuTTY is a free and open-source terminal emulator and network file transfer application. It supports a variety of network protocols, including SSH, Telnet, and SCP, making it a popular tool for securely accessing and managing remote servers. PuTTY is lightweight, highly customizable, and widely used on Windows, though it is also available for other operating systems. |  
-|[Termius](https://termius.com/) | Termius is a modern and feature-rich SSH client designed for managing remote systems securely and efficiently. It supports a wide range of platforms, including Windows, macOS, Linux, iOS, and Android, enabling seamless access across devices. With features like end-to-end encryption, SFTP file transfer, and organized host grouping, Termius is ideal for developers, system administrators, and IT professionals. It also includes a sleek interface, advanced terminal capabilities, and options for syncing settings and credentials across multiple devices. |
+| [Termius](https://termius.com/) | Termius is a modern and feature-rich SSH client designed for managing remote systems securely and efficiently. It supports a wide range of platforms, including Windows, macOS, Linux, iOS, and Android, enabling seamless access across devices. With features like end-to-end encryption, SFTP file transfer, and organized host grouping, Termius is ideal for developers, system administrators, and IT professionals. It also includes a sleek interface, advanced terminal capabilities, and options for syncing settings and credentials across multiple devices. |
 
 ## FTP
 
@@ -26,7 +27,10 @@
 | Application | Description |
 | ----------- | ----------- |
 | [WireGuard](https://www.wireguard.com/) | WireGuard is a modern and highly efficient VPN protocol and software designed for secure and fast network connections. It is known for its simplicity, minimal codebase, and high performance, offering encryption standards that ensure strong privacy and data protection. WireGuard is cross-platform, working on Windows, macOS, Linux, Android, and iOS. Its lightweight design makes it easy to configure and maintain, making it a popular choice for both individuals and organizations. |
-| [Nekoray](https://github.com/MatsuriDayo/nekoray) | Nekoray is an easy-to-use and versatile proxy client designed to simplify VPN and proxy management. It supports a range of protocols, including V2Ray, Shadowsocks and VLESS, making it ideal for bypassing restrictions and maintaining online privacy. With a clean interface, detailed configuration options, and compatibility across Windows, macOS, and Linux, Nekoray is a reliable solution for secure browsing and application-specific proxy setups. |
+| [Nekoray](https://github.com/Mahdi-zarei/nekoray/) | Nekoray is an easy-to-use and versatile proxy client designed to simplify VPN and proxy management. It supports a range of protocols, including V2Ray, Shadowsocks and VLESS, making it ideal for bypassing restrictions and maintaining online privacy. With a clean interface, detailed configuration options, and compatibility across Windows, macOS, and Linux, Nekoray is a reliable solution for secure browsing and application-specific proxy setups. |
+| [Sing-box](https://sing-box.sagernet.org/) | The universal proxy platform. Sing-box is a versatile proxy platform designed for advanced network tunneling, privacy protection, and traffic obfuscation. |
+| [Happ](https://github.com/Happ-proxy) | Happ is a application designed for convenient proxy server management, powered by the robust Xray core. The app features an intuitive interface and a range of useful functions, making it an essential tool for managing connections. |
+
 
 ## Monitoring and sys info
 
@@ -54,13 +58,20 @@
 | Application | Description |
 | ----------- | ----------- |
 | [PowerToys](https://github.com/microsoft/PowerToys) | PowerToys is a collection of free, open-source utilities for Windows that enhance productivity and provide advanced features for power users. Developed by Microsoft, these tools allow users to customize and improve their Windows experience with a variety of enhancements. PowerToys provides a suite of utilities designed to make common tasks easier and improve system functionality. | 
-| [EarTrumpet](https://apps.microsoft.com/detail/9nblggh516xp?hl=ru-ru&gl=RU) | Is a powerful volume control app for Windows |
+| [EarTrumpet](https://apps.microsoft.com/detail/9nblggh516xp?hl=ru-ru&gl=RU) | Is a powerful volume control app for Windows. |
+| [NVIDIA Shader Cache Explorer](https://github.com/Aetopia/NVIDIA-Shader-Cache-Explorer) | A tool to manage shader cache generated by a NVIDIA GPU driver. |
+| (https://github.com/RedDot-3ND7355/MPO-GPU-FIX)
+| [MAS](https://github.com/massgravel/Microsoft-Activation-Scripts) | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, KMS38, and Online KMS activation methods, along with advanced troubleshooting. |
+| [PaintDotNet](https://github.com/paintdotnet/release) | Downloads for Paint.NET, such as installer EXEs and portable ZIPs. |
+| [zapret-discord-youtube](https://github.com/Flowseal/zapret-discord-youtube) | Zapret implementation for Windows, plug and play.
 
 ## Notes 
 | Application | Description |
 | ----------- | ----------- |
 | [Obsidian](https://obsidian.md/) | Obsidian is a powerful and versatile note-taking and knowledge management application designed for users who value flexibility, customization, and the ability to create a connected "second brain." It's popular among students, researchers, writers, and professionals who need an efficient system for organizing their thoughts, notes, and projects. |
 | [Notion](https://www.notion.com/) | Notion is an all-in-one productivity and note-taking platform that combines features like document creation, task management, database organization, and team collaboration. It’s designed to be highly customizable, making it suitable for individuals, teams, and businesses alike. |
+| [Hoarder](https://github.com/hoarder-app/hoarder) | A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there. Hoarder is an independent, non-commercial project. It is not affiliated with, endorsed by, or connected to Hordr.app or its owners. |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy-Cloud) | AppFlowy Cloud is part of the AppFlowy ecosystem, offering secure user authentication, file storage, and real-time WebSocket communication for an efficient and collaborative user experience. | 
 
 ## Virtual machine
 | Application | Description |
@@ -79,4 +90,4 @@
 | ----------- | ----------- |
 | [3x-ui](https://wiki.amdcloud.kz/3x-ui/) | Xray panel supporting multi-protocol multi-user expire day & traffic & IP limit (Vmess & Vless & Trojan & ShadowSocks & Wireguard). |
 | [Nekoray](https://wiki.amdcloud.kz/nekoray/) | Qt based cross-platform GUI proxy configuration manager (backend: sing-box). |
-| [Marzban](https://wiki.amdcloud.kz/marzban/) | Unified GUI Censorship Resistant Solution Powered by Xray. |
+| [Remnawave](https://github.com/remnawave/panel) | A powerful proxy management tool, built on top of Xray-core, with a focus on simplicity and ease of use. |
