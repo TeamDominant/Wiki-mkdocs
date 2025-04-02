@@ -57,6 +57,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tasklist
   - pymdownx.keys
+  - pymdownx.emoji
   - pymdownx.tabbed:
       alternate_style: true 
   - attr_list
