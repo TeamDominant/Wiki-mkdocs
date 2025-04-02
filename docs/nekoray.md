@@ -3,12 +3,7 @@
 !!! Sources
     [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
-Before we begin, note that there are two installation options depending on your needs:
-
-- If you chose [Reality](https://wiki.amdcloud.kz/3x-ui/#reality) method for your 3x-ui installation - you may use the original [Nekoray](https://github.com/MatsuriDayo/nekoray).
-- If you need to proxy specific applications, we recommend [Mahdi-zarei's nekoray fork](https://github.com/Mahdi-zarei/nekoray).
-
-This is because no matter what version of an original [Nekoray](https://github.com/MatsuriDayo/nekoray), the "Whitelist Mode" in Tun Mode settings does not work for everyone in our team. As a result, you won’t be able to proxy only specific applications.
+Since MatsuriDayo archived his [repo](https://github.com/MatsuriDayo/nekoray) and it was unstable & bugged in general, we recommend migrating to [better nekoray implemetation](https://github.com/Mahdi-zarei/nekoray/releases/latest). It has less useless buttons, functions, more understable and flexible. 
 
 ## Install 
 
@@ -17,10 +12,6 @@ Installing and Configuring Nekoray
 Here is a list of all available download links for Nekoray, categorized by operating system:
 
 - **Nekoray for Windows (64-bit)**
-=== "Mahdi-zarei's repo"
-    [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
-
-- **Nekoray for linux (64-bit, archive)**
 === "Mahdi-zarei's repo"
     [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 
@@ -46,7 +37,7 @@ Step 1: Download `Nekoray`
 
 Step 2: fter the download is complete, follow these steps:
 
-- Locate the downloaded file: `nekoray-3.26-2023-12-09-windows64.zip`.  
+- Locate the downloaded file. 
 
 - Right-click on the file and select "Extract All…", or use an archiving tool like WinRAR or 7-Zip to extract the contents to a convenient location on your computer.  
 
