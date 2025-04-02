@@ -1,6 +1,6 @@
 # Nekoray
 
-??? Sources
+!!! Sources
     [Aéza](https://wiki.aeza.net/universal-virtual-private-network-client-nekoray#pervichnaya-nastroika-nekoray-na-windows)
 
 Before we begin, note that there are two installation options depending on your needs:
@@ -17,36 +17,20 @@ Installing and Configuring Nekoray
 Here is a list of all available download links for Nekoray, categorized by operating system:
 
 - **Nekoray for Windows (64-bit)**
-=== "Mahdi-zarei's fork"
-    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
-=== "3.26"
-    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)
-=== "3.25"
-    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-windows64.zip)
+=== "Mahdi-zarei's repo"
+    [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 
 - **Nekoray for linux (64-bit, archive)**
-=== "Mahdi-zarei's fork"
-    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
-=== "3.26"
-    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)
-=== "3.25"
-    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux64.zip)
+=== "Mahdi-zarei's repo"
+    [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 
 - **Nekoray for Linux (AppImage)**
-=== "Mahdi-zarei's fork"
-    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
-=== "3.26"
-    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux-x64.AppImage)
-=== "3.25"
-    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-linux-x64.AppImage)  
+=== "Mahdi-zarei's repo"
+    [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 
 - **Nekoray for Debian/Ubuntu (64-bit, package .deb)**
-=== "Mahdi-zarei's fork"
-    [Download Mahdi-zarei's fork](https://github.com/Mahdi-zarei/nekoray/releases/latest)
-=== "3.26"
-    [Download 3.26](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-debian-x64.deb)
-=== "3.25"
-    [Download 3.25](https://github.com/MatsuriDayo/nekoray/releases/download/3.25/nekoray-3.25-2023-11-25-debian-x64.deb) 
+=== "Mahdi-zarei's repo"
+    [Download latest](https://github.com/Mahdi-zarei/nekoray/releases/latest)
 
 - **Nekoray for Android**
 === "arm64-v8a"
@@ -74,7 +58,50 @@ Step 3: Launching the Program
 
 The program works out of the box. No installation is required.
 
+## Initial Setup of Nekoray
+
+### Blocklist
+
+Go to Settings -> Route Settings -> Route 
+
+Select `Default` and click `Edit`
+
+Click `New` and rename new Rules
+
+In the **Name** field, you can enter any name you want. In the **Attribute** field, select `process_name`. In **Outbound**, choose `direct`.
+
+![nekoray_fork_route](images/Nekorayfork/nekoray_fork_route.png)
+
+In the bottom left field, enter the process you do not want to proxy. Process names can be found in the Task Manager under the Details tab.
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_addprocess.png)
+
+!!! warning
+    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
+
+### Whitelist
+
+Go to Settings -> Route Settings -> Route
+
+Click `New`, write name for your new Route in field **Name**
+
+Add **new** Rule. Select **Attribute** -> `process_name` and **Outbound** -> `proxy`
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_whitelist.png) 
+
+In the left field, enter the processes you want to proxy.
+
+!!! warning
+    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
+
+Save the settings, and then in the route settings, under **General**, select our profile in **Routing Profile**, and set **Outbound** to `direct`.
+
+![nekoray_fork_addprocess](images/Nekorayfork/nekoray_routesetting.png)
+
 ## Initial Setup of original Nekoray
+
+!!! danger
+    Nekoray published by MatsuriDayo is no longer supported and is archived. Please, migrate to Mahdi-zarei's one
 
 1. Core Selection:
 
@@ -141,45 +168,3 @@ Now we have three scenarios:
 - At the top, you will see **TUN Mode** — turn it on. You will be prompted to restart the program as **an administrator**. **Confirm**.
 
 ![Nekoraytunmode](images/nekoray/nekoraytunmode.png)
-
-## Initial Setup of Nekoray fork
-
-### Blocklist
-
-Go to Settings -> Route Settings -> Route 
-
-Select `Default` and click `Edit`
-
-Click `New` and rename new Rules
-
-In the **Name** field, you can enter any name you want. In the **Attribute** field, select `process_name`. In **Outbound**, choose `direct`.
-
-![nekoray_fork_route](images/Nekorayfork/nekoray_fork_route.png)
-
-In the bottom left field, enter the process you do not want to proxy. Process names can be found in the Task Manager under the Details tab.
-
-![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_addprocess.png)
-
-!!! warning
-    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
-
-
-
-## Whitelist
-
-Go to Settings -> Route Settings -> Route
-
-Click `New`, write name for your new Route in field **Name**
-
-Add **new** Rule. Select **Attribute** -> `process_name` and **Outbound** -> `proxy`
-
-![nekoray_fork_addprocess](images/Nekorayfork/nekoray_fork_whitelist.png) 
-
-In the left field, enter the processes you want to proxy.
-
-!!! warning
-    It is important to enter the process name with the correct letter case. If the process starts with an uppercase letter but you enter it in lowercase (or vice versa), it will not work.
-
-Save the settings, and then in the route settings, under **General**, select our profile in **Routing Profile**, and set **Outbound** to `direct`.
-
-![nekoray_fork_addprocess](images/Nekorayfork/nekoray_routesetting.png)
