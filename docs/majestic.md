@@ -38,17 +38,16 @@
 
 ## Redux installation
 
-1. Скачиваем любой редукс.
+!!! warning
+    Редукс не будет работать если игра установлена через **Rockstar Games**.
 
+1. Скачиваем любой редукс.  
 Примеры:  
 - [Drain V3](https://drive.google.com/drive/folders/1FVPkq57NDF8y-KRUrZ8d177KXGRekE3P?usp=sharing)
 
 2. Распаковываем архив.
 
 3. Открываем папку с игрой и открываем папку update.
-
-!!! warning
-    Редукс не будет работать если игра установлена через **Rockstar Games**.
 
 4. Перекидываем скаченый файл update.rpf с заменой.
 
