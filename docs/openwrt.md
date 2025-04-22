@@ -195,18 +195,18 @@ Install `luci-app-sqm` (or `sqm-scripts` if you don't use LuCI) and read below.
 In LuCI go to Network → SQM QoS:
 
 1. In the **Basic Settings** tab:
-    * Check the **Enable** box
-    * Set the **Interface** to your internet (WAN) link in the dropdown. Check Network → Interfaces if you need to determine your WAN port.
-    * Enter your **Download** and **Upload** speeds to 90% of the results you tested in Preparation
+    - Check the **Enable** box
+    - Set the **Interface** to your internet (WAN) link in the dropdown. Check Network → Interfaces if you need to determine your WAN port.
+    - Enter your **Download** and **Upload** speeds to 90% of the results you tested in Preparation
 2. In the **Queue Discipline** tab:
-    * Choose *cake* as the Queueing Discipline (or fq_codel, consider [note 3](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning))
-    * Choose *piece_of_cake.qos* as the Queue Setup Script
-    * Advanced Configuration may be left unchecked (see [note 4](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning) for advanced settings)
+    - Choose *cake* as the Queueing Discipline (or fq_codel, consider [note 3](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning))
+    - Choose *piece_of_cake.qos* as the Queue Setup Script
+    - Advanced Configuration may be left unchecked (see [note 4](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning) for advanced settings)
 3. In the **Link Layer Adaptation** tab, select your link and overhead (setting mpu is optional see [note 2](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning)):
-    * VDSL - choose **Ethernet**, and set overhead 34 (or 26 if you're not using PPPoE) (mpu 68). If the link is 100 Mbps Ethernet set overhead 42 (mpu 84).
-    * DSL of any other type - choose **ATM**, and set overhead 44 (mpu 96).
-    * DOCSIS Cable - choose **Ethernet**, and for rates < 760 Mbps set overhead 22 (mpu 64), for rates >= 760 Mbps set overhead 42 (mpu 84).
-    * Fiber - choose **Ethernet**, and set overhead 44 (mpu 84).
-    * Ethernet - choose **Ethernet**, and set overhead 44 (mpu 84).
-    * If unsure - it's better to overestimate, choose **Ethernet**, and set overhead 44 (mpu 96).
+    - VDSL - choose **Ethernet**, and set overhead 34 (or 26 if you're not using PPPoE) (mpu 68). If the link is 100 Mbps Ethernet set overhead 42 (mpu 84).
+    - DSL of any other type - choose **ATM**, and set overhead 44 (mpu 96).
+    - DOCSIS Cable - choose **Ethernet**, and for rates < 760 Mbps set overhead 22 (mpu 64), for rates >= 760 Mbps set overhead 42 (mpu 84).
+    - Fiber - choose **Ethernet**, and set overhead 44 (mpu 84).
+    - Ethernet - choose **Ethernet**, and set overhead 44 (mpu 84).
+    - If unsure - it's better to overestimate, choose **Ethernet**, and set overhead 44 (mpu 96).
 4. Click **Save & Apply**.
