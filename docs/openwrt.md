@@ -38,7 +38,7 @@ You'll want to modify your interfaces, to determine WAN port and others as LAN
 vi /etc/config/network
 ```
 
-Use ++S++ to enter INSERT mode.
+Use ++s++ to enter INSERT mode.
 
 ```lan hl_lines="4"
 config device
@@ -57,7 +57,7 @@ config interface 'wan6'
         option proto 'dhcpv6'
 ```
 
-Press ++Esc++ to exit INSERT mode and save-exit with `:wq`
+Press ++esc++ to exit INSERT mode and save-exit with `:wq`
 
 ### [Partition](https://openwrt.org/docs/guide-user/installation/openwrt_x86#partition_layout) 
 
@@ -184,6 +184,7 @@ Feel free to change upstream DNS servers to whatever you like (Adguard Home supp
 ### [Preparation: Measure Your Current Speed and Latency](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#preparationmeasure_your_current_speed_and_latency)
 
 Before you can optimize your network, you need to know its current state.
+
 - When your internet is quiet run a speed test from [Waveform](https://www.waveform.com/tools/bufferbloat) or [Speedtest](https://speedtest.net/). This is to determine your peak download/upload speeds, latency, and grade your bufferbloat.
 - To maximize performance most devices will benefit from enabling Packet Steering under LuCI → Network → Interfaces → Global network options.
 - If you are using this OpenWrt device as an [Extender, Repeater, or Bridge](https://openwrt.org/docs/guide-user/network/wifi/relay_configuration), test your upstream router (OpenWrt or otherwise) and determine if an issue is present there first.
@@ -195,18 +196,26 @@ Install `luci-app-sqm` (or `sqm-scripts` if you don't use LuCI) and read below.
 In LuCI go to Network → SQM QoS:
 
 1. In the **Basic Settings** tab:
+
     - Check the **Enable** box
     - Set the **Interface** to your internet (WAN) link in the dropdown. Check Network → Interfaces if you need to determine your WAN port.
     - Enter your **Download** and **Upload** speeds to 90% of the results you tested in Preparation
 2. In the **Queue Discipline** tab:
+
     - Choose *cake* as the Queueing Discipline (or fq_codel, consider [note 3](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning))
     - Choose *piece_of_cake.qos* as the Queue Setup Script
     - Advanced Configuration may be left unchecked (see [note 4](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning) for advanced settings)
 3. In the **Link Layer Adaptation** tab, select your link and overhead (setting mpu is optional see [note 2](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning)):
+
     - VDSL - choose **Ethernet**, and set overhead 34 (or 26 if you're not using PPPoE) (mpu 68). If the link is 100 Mbps Ethernet set overhead 42 (mpu 84).
     - DSL of any other type - choose **ATM**, and set overhead 44 (mpu 96).
     - DOCSIS Cable - choose **Ethernet**, and for rates < 760 Mbps set overhead 22 (mpu 64), for rates >= 760 Mbps set overhead 42 (mpu 84).
     - Fiber - choose **Ethernet**, and set overhead 44 (mpu 84).
     - Ethernet - choose **Ethernet**, and set overhead 44 (mpu 84).
     - If unsure - it's better to overestimate, choose **Ethernet**, and set overhead 44 (mpu 96).
+
 4. Click **Save & Apply**.
+
+## Mihomo
+
+## Themes
