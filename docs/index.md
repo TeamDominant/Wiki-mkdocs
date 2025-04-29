@@ -19,10 +19,13 @@
 ## Server
 
 - [Askubuntu](askubuntu.md)
+- [Canary](canary.md)
 - [DNS for Containers](containers-dns.md)
+- [Firehol](firehol.md)
 - [Nextcloud](nextcloud.md)
 - [OpenWrt](openwrt.md)
 - [Scripts](scripts.md)
+- [Simplelogin](simplelogin.md)
 - [SWAG](secure.md)
 - [Geoblock](geoblock.md)
 - [Jfscan](jfscan.md)
