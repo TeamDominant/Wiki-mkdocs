@@ -5,7 +5,7 @@
 
 ## Strategy
 
-![simplelogin](images/simplelogin.png)
+![simplelogin](images/simplelogin/simplelogin.png)
 
 ## Notes
 
