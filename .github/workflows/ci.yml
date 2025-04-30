@@ -28,7 +28,7 @@ jobs:
       - run: pip install mkdocs-material 
       - run: pip install pillow cairosvg
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy
       - name: Run Actions Telegram Notify
         uses: proDreams/actions-telegram-notifier@main
         if: always()
