@@ -101,7 +101,7 @@ A step by step guide for setting up:
     ```
 - Navigate to `https://nextcloud.domain.com` and fill out the details for Nextcloud and Mariadb.
     
-    ![Nextcloud](images/nextcloud.png)
+    ![Nextcloud](images/nextcloud/nextcloud.png)
 
 - Select recommended apps to install.
 - Run the following commands.

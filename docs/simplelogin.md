@@ -35,7 +35,7 @@
     fi
     ```
 
-- Setting up [Crowdsec](https://www.linuxserver.io/blog/blocking-malicious-connections-with-crowdsec-and-swag), [Geoblock](../Network/geoblock.md), and [Firehol](../Network/firehol.md) is highly recommended.
+- Setting up [Crowdsec](https://www.linuxserver.io/blog/blocking-malicious-connections-with-crowdsec-and-swag), [Geoblock](../geoblock.md), and [Firehol](../firehol.md) is highly recommended.
 - [Check the dmarc](https://www.learndmarc.com/) once you finish setting everything up.
 - [Check the spammyness](https://www.mail-tester.com/) once you finish setting everything up.
 
