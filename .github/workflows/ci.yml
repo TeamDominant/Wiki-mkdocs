@@ -35,7 +35,7 @@ jobs:
         with:
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
-          thread_it: ${{ secrets.THREAD_ID }}
+          thread_id: ${{ secrets.THREAD_ID }}
           status: ${{ job.status }}
           notify_fields: "actor,repository,workflow,branch,commit"
           message: "Pages will be updated in a few seconds."
