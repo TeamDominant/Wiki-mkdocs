@@ -63,9 +63,9 @@ Press ++esc++ to exit INSERT mode and save-exit with `:wq`
 
 The x86 image is using the following partition layout (as seen from inside of the device):
 
-- /dev/sda1 is a 16MB ext4 /boot partition where GRUB and the kernel are stored.
-- /dev/sda2 is a 104MB partition containing the squashfs root filesystem and a read-write f2fs filesystem OR the ext4 root filesystem (depending on what image you have chosen).
-- And also nowadays there is /dev/sda3, which is X MB partition.
+- `/dev/sda1` is a 16MB ext4 /boot partition where GRUB and the kernel are stored.
+- `/dev/sda2` is a 104MB partition containing the squashfs root filesystem and a read-write f2fs filesystem OR the ext4 root filesystem (depending on what image you have chosen).
+- And also nowadays there is `/dev/sda3`, which is X MB partition.
 
 ### [Expanding root partition and filesystem](https://openwrt.org/docs/guide-user/advanced/expand_root)
 
@@ -90,6 +90,9 @@ reboot
 
 ## AdGuard Home
 ### [Installation](https://openwrt.org/docs/guide-user/services/dns/adguard-home#installation)
+
+!!! danger
+    AdGuard Home package is not compatible with SSClash package. It ruins the ssclash and won't let it work in most cases.
 
 Since 21.02, there is a official AdGuard Home package which can be installed through opkg.
 
@@ -166,9 +169,9 @@ chmod +x script.sh
 
 On first time setup the default web interface port is TCP 3000.
 
-- Go to http://192.168.1.1:3000/ (If your router IP is not 192.168.1.1, change this accordingly)
-- Setup the Admin Web Interface to listen on 192.168.1.1 at port 8080. (Changing the web interface port is optional)
-- Set DNS server to listen on 192.168.1.1 at port 53.
+- Go to `http://192.168.1.1:3000/` (If your router IP is not `192.168.1.1`, change this accordingly)
+- Setup the Admin Web Interface to listen on `192.168.1.1` at port 8080. (Changing the web interface port is optional)
+- Set DNS server to listen on `192.168.1.1` at port 53.
 - Create an user and choose a strong password.
 
 ### [Login AGH](https://openwrt.org/docs/guide-user/services/dns/adguard-home#login_agh)
@@ -200,11 +203,13 @@ In LuCI go to Network → SQM QoS:
     - Check the **Enable** box
     - Set the **Interface** to your internet (WAN) link in the dropdown. Check Network → Interfaces if you need to determine your WAN port.
     - Enter your **Download** and **Upload** speeds to 90% of the results you tested in Preparation
+
 2. In the **Queue Discipline** tab:
 
     - Choose *cake* as the Queueing Discipline (or fq_codel, consider [note 3](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning))
     - Choose *piece_of_cake.qos* as the Queue Setup Script
     - Advanced Configuration may be left unchecked (see [note 4](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning) for advanced settings)
+
 3. In the **Link Layer Adaptation** tab, select your link and overhead (setting mpu is optional see [note 2](https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm#a_little_more_tuning)):
 
     - VDSL - choose **Ethernet**, and set overhead 34 (or 26 if you're not using PPPoE) (mpu 68). If the link is 100 Mbps Ethernet set overhead 42 (mpu 84).
@@ -217,5 +222,14 @@ In LuCI go to Network → SQM QoS:
 4. Click **Save & Apply**.
 
 ## Mihomo
+### Variations
+
+- [SSClash](https://github.com/zerolabnet/ssclash)
+- [Nikki](https://github.com/vernesong/OpenClash)
+- [OpenClash](https://github.com/vernesong/OpenClash)
+- [FullCombo Shark](https://github.com/vernesong/OpenClash)
+
+### SSClash
 
 ## Themes
+### [Alpha Theme](https://github.com/derisamedia/luci-theme-alpha)

@@ -9,8 +9,8 @@
 
 ## Network
 
-- [3x-ui](3x-ui.md)
 - [Nekoray](nekoray.md)
+- [Remnawave](remnawave.md)
 - [Streisand](streisand.md)
 
 ## Server
